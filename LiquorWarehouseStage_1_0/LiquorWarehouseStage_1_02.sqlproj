@@ -603,7 +603,7 @@
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
-    <Build Include="SRSIn\Tables\SRSCLNDR.sql" />
+    <Build Include="SRSIn\Tables\SRSCAL.sql" />
     <Build Include="SRSIn\Tables\ORDDA.sql" />
     <Build Include="SRSIn\Tables\INVDA.sql" />
     <Build Include="SRSIn\Tables\ITMDA.sql" />
