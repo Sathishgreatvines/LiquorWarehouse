@@ -2,7 +2,7 @@
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMDIST] [varchar](14) NOT NULL,
 	[SMACTD] [numeric](6, 0) NOT NULL,
-	[SMSITM] [varchar](10) NOT NULL,
+	[SMSITM] [varchar](15) NULL,
 	[SMDITM] [varchar](10) NOT NULL,
 	[SMBOH] [numeric](10, 0) NOT NULL,
 	[SMRCPT] [numeric](10, 0) NOT NULL,
@@ -41,5 +41,5 @@
 	[INAVGSLS] [numeric](8, 0) NULL,
 	[INPARENT] [varchar](8) NULL,
 	[SMPERIOD] [numeric](6, 0) NOT NULL,
-	[FILENAME] VARCHAR(100) NOT NULL
-) 
+	[FILENAME] [varchar](100) NOT NULL
+)
