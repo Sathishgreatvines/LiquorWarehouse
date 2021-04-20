@@ -20,7 +20,7 @@
     [RegionName]                       NVARCHAR (100)  NULL,
     [TerritoryID]                      VARCHAR(18)  NULL,
     [TerritoryURL]                     NVARCHAR (100)  NULL,
-    [TerritoryExternalID]                     NVARCHAR (50)   NULL,
+    [TerritoryExternalID]                     NVARCHAR (100)   NULL,
     [TerritoryName]                    NVARCHAR (200)  NULL,
     [TerritoryCustom1]                NVARCHAR(200) NULL,
     [TerritoryCustom2]                NVARCHAR(200) NULL,
