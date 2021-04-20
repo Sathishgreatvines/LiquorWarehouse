@@ -55,6 +55,7 @@
 	MSA_Code					VARCHAR (25)	 NULL,
 	Outlet_Number				VARCHAR (60)	 NULL,
 	Store_Volume				NVARCHAR(200)	 NULL,
+	gvp__Custom_6__c            NVARCHAR(255)    NULL,
 	SourceFile					VARCHAR(100)	 NULL,
 	CONSTRAINT [PK_Retailer] PRIMARY KEY (Retailer_Key)
 	)
