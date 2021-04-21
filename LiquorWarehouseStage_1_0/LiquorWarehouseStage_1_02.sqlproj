@@ -328,7 +328,6 @@
     <Build Include="SRSIn\Tables\CTLDA.sql" />
     <Build Include="SRSIn\Tables\SRSCHAIN.sql" />
     <Build Include="SRSIn\Tables\SRSVALUE.sql" />
-    <Build Include="SRSIn\Tables\ITEMMAST.sql" />
     <Build Include="SRSIn\Tables\OUTDA.sql" />
     <Build Include="SFIn\Tables\ContentVersion.sql" />
     <Build Include="SFIn\Tables\ContentDocumentLink.sql" />
