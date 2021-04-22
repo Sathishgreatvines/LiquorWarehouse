@@ -604,6 +604,7 @@
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="dbo\Tables\GoalLevel.sql" />
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c_1.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -622,5 +623,7 @@
     <None Include="RNDCLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="aaAsheeshLiquorWarehouseStage_1_03_05.publish.xml" />
     <None Include="aaHemantLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="CraftRevolutionLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="CraftRevolutionLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
