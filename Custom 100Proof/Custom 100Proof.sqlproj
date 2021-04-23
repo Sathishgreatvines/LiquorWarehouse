@@ -59,25 +59,25 @@
     <Folder Include="Properties" />
     <Folder Include="ERPIn" />
     <Folder Include="ERPIn\Tables" />
-    <Folder Include="SFIn" />
-    <Folder Include="SFIn\Tables" />
-    <Folder Include="SFOut" />
-    <Folder Include="SFOut\Tables" />
+    <Folder Include="Security" />
     <Folder Include="GVP" />
     <Folder Include="GVP\Tables" />
-    <Folder Include="Security" />
+    <Folder Include="SFOut" />
+    <Folder Include="SFOut\Tables" />
+    <Folder Include="SFIn" />
+    <Folder Include="SFIn\Tables" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="ERPIn\Tables\Retailer.sql" />
     <Build Include="ERPIn\Tables\Product.sql" />
     <Build Include="ERPIn\Tables\RAD.sql" />
-    <Build Include="ERPIn\Tables\Retailer.sql" />
-    <Build Include="SFIn\Tables\gvp__Item__c.sql" />
-    <Build Include="SFOut\Tables\gvp__Item__c.sql" />
-    <Build Include="SFOut\Tables\gvp__Size__c.sql" />
-    <Build Include="GVP\Tables\gvp__Item__c.sql" />
     <Build Include="Security\ERPIn.sql" />
+    <Build Include="GVP\Tables\gvp__Item__c.sql" />
     <Build Include="Security\GVP.sql" />
-    <Build Include="Security\SFIn.sql" />
+    <Build Include="SFOut\Tables\gvp__Item__c.sql" />
     <Build Include="Security\SFOut.sql" />
+    <Build Include="SFOut\Tables\gvp__Size__c.sql" />
+    <Build Include="SFIn\Tables\gvp__Item__c.sql" />
+    <Build Include="Security\SFIn.sql" />
   </ItemGroup>
 </Project>
