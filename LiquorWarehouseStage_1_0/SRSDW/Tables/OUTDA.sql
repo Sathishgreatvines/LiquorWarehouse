@@ -51,6 +51,7 @@
 	,[TERR17] [varchar](1) NULL
 	,[TERR18] [varchar](1) NULL
 	,[TERR19] [varchar](1) NULL
+	,[TERR20] [varchar](1) NULL
 	,[TERR21] [varchar](1) NULL
 	,[TERR22] [varchar](1) NULL
 	,[TERR23] [varchar](1) NULL
@@ -78,6 +79,7 @@
 	,[DATEADDED] [DATETIME] NOT NULL
 	,[LASTUPDATED] [DATETIME] NOT NULL
 	,[SOURCESTATUS] VARCHAR (10) NOT NULL
+	,[SRSDWHash] varchar(32) null
 	,[FILENAME] [varchar](100) NOT NULL,
 	CONSTRAINT [PK_OUTDA] PRIMARY KEY ([DISTID] ,[ROCUST] )
 )
