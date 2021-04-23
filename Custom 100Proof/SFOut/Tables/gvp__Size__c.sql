@@ -22,4 +22,3 @@
     [gvp__Is_Active__c]                 VARCHAR (10)     NULL
     CONSTRAINT [PK_gvp__Size__c] PRIMARY KEY CLUSTERED ([gvp__Size_Key__c])
 );
-

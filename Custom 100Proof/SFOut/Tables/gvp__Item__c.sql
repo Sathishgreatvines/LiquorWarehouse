@@ -84,4 +84,3 @@
 	[Product_Category_Picklist__c]          NVARCHAR (200)    NULL,
     CONSTRAINT [PK_gvp__Item__c] PRIMARY KEY ([gvp__Item_Key__c], [gvp__Item_Number__c])
 );
-

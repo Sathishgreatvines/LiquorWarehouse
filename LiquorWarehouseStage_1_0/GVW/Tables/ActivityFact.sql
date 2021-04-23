@@ -75,7 +75,7 @@
     [MenuDrinkName]             VARCHAR (100)  NULL,
     [ModifiedDate]                 CHAR(10)       NULL,
     [Notes]              NVARCHAR(255)  NULL,
-    [ObjectiveResults]           VARCHAR (250)  NULL,
+    [ObjectiveResults]           VARCHAR (300)  NULL,
     [OrderCommitBottles]          VARCHAR (20)   NULL,
     [PackageType]                VARCHAR (50)   NULL,
     [PersonDimID]               VARCHAR (20)   NULL DEFAULT '-1',
