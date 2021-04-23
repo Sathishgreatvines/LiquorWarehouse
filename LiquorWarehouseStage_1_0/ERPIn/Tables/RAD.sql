@@ -19,6 +19,7 @@
   Deposit_Amt             money,
   Custom_1                nvarchar(255),
   Custom_2                nvarchar(255),
+  Unit_of_Measure         varchar(20), 
   [SourceFile]            VARCHAR(100) NULL, 
     CONSTRAINT [PK_RAD] PRIMARY KEY ([ERPInRADSKey])
 )
