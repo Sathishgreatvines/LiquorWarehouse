@@ -29,6 +29,7 @@
     [Industry]                                  NVARCHAR (100)  NULL,
     [AccountSource]                             NVARCHAR (100)  NULL,
     [AnnualRevenue]                             NVARCHAR(100)          NULL,
+    [AccountNumber]                             NVARCHAR(40)          NULL,
     [NumberOfEmployees]                         INT  NULL,
     [Description]                               NVARCHAR (2000)  NULL,
     [Site]                                      VARCHAR (80)  NULL,
