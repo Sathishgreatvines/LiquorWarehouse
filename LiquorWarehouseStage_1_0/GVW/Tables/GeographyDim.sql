@@ -16,7 +16,7 @@
 	[RegionName] 					      varchar(50) NULL,
 	[TerritoryID]	      				VARCHAR(18) NULL,
 	[TerritoryURL]       				nvarchar(250) NULL,
-	[TerritoryExternalID] 		      		varchar(50) NULL,
+	[TerritoryExternalID] 		      		varchar(100) NULL,
 	[TerritoryName] 			      	nvarchar(200) NULL,
 	[TerritoryCustom1] 		  	  nvarchar(200) NULL,
 	[TerritoryCustom2]	 	    	nvarchar(200) NULL,
