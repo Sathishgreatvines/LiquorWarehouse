@@ -626,5 +626,6 @@
     <None Include="CraftRevolutionLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="CraftRevolutionLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="100ProofLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="TrialMasterLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
