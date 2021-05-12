@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIn].[gvp__Inventory__c]
+﻿CREATE TABLE [GVP].[gvp__Inventory__c]
 (   Id                         char(18)      not null, 
 	IsDeleted                  varchar(10)   not null,
 	[Name]                     nvarchar(100) not null,
