@@ -100,7 +100,7 @@
     [CustomDate2]             VARCHAR (10) NULL,
     [DeliveryTime]             NVARCHAR (70)  NULL,
     [SourceFile]               VARCHAR (100)  NULL,
-    [Warehouse]                 NVARCHAR (100) NULL,
+    [Warehouse]                 NVARCHAR (255) NULL,
     [DistributorRep]           VARCHAR(50)  NULL,
     [DistributorTeam]          NVARCHAR (100)  NULL,
     [DistributorName]          NVARCHAR (250)  NULL,
