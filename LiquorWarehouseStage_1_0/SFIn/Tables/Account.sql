@@ -1,5 +1,4 @@
-﻿CREATE TABLE [SFIn].[Account] (
-    [Id]                                        char (18)   NOT NULL,
+﻿CREATE TABLE [SFIn].[Account] ( [Id]                                        char (18)   NOT NULL,
     [IsDeleted]                                 VARCHAR (10) NOT NULL,
     [MasterRecordId]                            CHAR (18)  NULL,
     [Name]                                      NVARCHAR (250)  NULL,
@@ -156,7 +155,7 @@
     [gvp__Territory__c]                         NVARCHAR (50)  NULL,
     [gvp__Ultimate_Parent_Code__c]              CHAR(18)  NULL,
     [gvp__Ultimate_Parent_Name__c]              NVARCHAR (100)  NULL,
-    [gvp__Warehouse__c]                         NVARCHAR (100)  NULL,
+    [gvp__Warehouse__c]                         NVARCHAR (255)  NULL,
     [gvp__Wine_Indicator__c]                    VARCHAR (100)  NULL,
     [gvp__Current_BTG_Placements__c]            DECIMAL(4,1)  NULL,
     [gvp__Current_Cocktail_Menu_Features__c]    DECIMAL(4,1)  NULL,
