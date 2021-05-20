@@ -604,7 +604,7 @@
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="dbo\Tables\GoalLevel.sql" />
-    <Build Include="SFIn\Tables\gvp__Account_Activity__c_1.sql" />
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="GVP\Tables\gvp__Inventory__c.sql" />
     <Build Include="Temp\Tables\GVWInventoryFact.sql" />
     <Build Include="Temp\Tables\GVWEventCallFact.sql" />
