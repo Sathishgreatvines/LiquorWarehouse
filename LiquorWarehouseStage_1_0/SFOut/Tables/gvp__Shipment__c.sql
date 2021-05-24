@@ -33,5 +33,5 @@
 	gvp__Custom_Fact_1__c decimal(15,8) null,
 	gvp__Custom_Fact_2__c decimal(15,8) null,
 	gvp__Source_System__c varchar(100) null
-    CONSTRAINT [PK_gvp__Shipment__c] PRIMARY KEY ([isDeleted],[gvp__Shipment_Key__c]) 
+    CONSTRAINT [PK_gvp__Shipment__c] PRIMARY KEY ([IsDeleted],[gvp__Shipment_Key__c]) 
 )

@@ -610,6 +610,8 @@
     <Build Include="Temp\Tables\GVWEventCallFact.sql" />
     <Build Include="Temp\Tables\GVWAccountCallFact.sql" />
     <Build Include="Temp\Tables\GVWRADFact.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />

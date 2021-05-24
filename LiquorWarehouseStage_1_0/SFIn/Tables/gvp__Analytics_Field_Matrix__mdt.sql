@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIN].[gvp__Analytics_Field_Matrix__mdt]
+﻿CREATE TABLE [SFIn].[gvp__Analytics_Field_Matrix__mdt]
 (
 	[Id] CHAR(18) NOT NULL, 
     [DeveloperName] NVARCHAR(100) NULL, 

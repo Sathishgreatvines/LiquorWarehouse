@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.GVPgvp__Account_Team__c
+﻿CREATE TABLE Temp.GVPgvp__Account_Team__c
 (
 	[Id]							char(18)		not null, 
 	OwnerId							char(18)		not null,

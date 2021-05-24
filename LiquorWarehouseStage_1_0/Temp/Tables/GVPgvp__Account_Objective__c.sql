@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.GVPgvp__Account_Objective__c (
+﻿CREATE TABLE Temp.GVPgvp__Account_Objective__c (
     [Id]                                   char (18)    NOT NULL,
     [IsDeleted]                            VARCHAR (10)    NULL,
     [Name]                                 NVARCHAR (100)   NULL,

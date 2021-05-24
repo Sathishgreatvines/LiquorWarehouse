@@ -1,4 +1,4 @@
-﻿CREATE TABLE [temp].[SFgvp__RAD__c]
+﻿CREATE TABLE [Temp].[SFgvp__RAD__c]
 (
   [Id] VARCHAR(255), 
 	IsDeleted varchar(10) not null,

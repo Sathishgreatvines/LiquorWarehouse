@@ -1,4 +1,4 @@
-CREATE TABLE temp.GVWSurveyFact (
+CREATE TABLE Temp.GVWSurveyFact (
 	[AccountDimID]                    VARCHAR(18)      NULL DEFAULT '-1',
 	[AccountTeamDimID]               VARCHAR(18)      NULL,
 	[AccountUniverseDimID]           VARCHAR(18)      NULL DEFAULT '-1',

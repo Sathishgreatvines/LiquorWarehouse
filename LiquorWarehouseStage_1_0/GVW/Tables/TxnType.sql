@@ -10,7 +10,7 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default 0,
     [GVWDeleted] BIT NOT NULL DEFAULT 0,
-    CONSTRAINT [PK_TxnType] PRIMARY KEY (GVWTxnTypesKey)
+    CONSTRAINT [PK_TxnType] PRIMARY KEY (GVWTxnTypeSKey)
 );
 
 

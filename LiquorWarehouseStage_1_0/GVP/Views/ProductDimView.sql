@@ -111,10 +111,10 @@ Select
   sup.gvp__Account_Key__c as SupplierAccountExternalID
 FROM
   [GVP].[gvp__Item__c] i
-  join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
-  join GVP.gvp__Size__c s on s.id = i.gvp__Size__c
-  join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
-  left join GVP.Account sup on sup.id = b.gvp__Supplier__c
+  join GVP.gvp__Label__c l on l.Id = i.gvp__Label__c
+  join GVP.gvp__Size__c s on s.Id = i.gvp__Size__c
+  join GVP.gvp__Brand__c b on b.Id = l.gvp__Brand__c
+  left join GVP.Account sup on sup.Id = b.gvp__Supplier__c
   inner Join [GVP].[RecordType] r on i.RecordTypeId = r.ID
 UNION
 Select
@@ -152,10 +152,10 @@ Select
   sup.gvp__Account_Key__c as SupplierAccountExternalID
 FROM
   [GVP].[gvp__Item__c] i
-  join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
-  join GVP.gvp__Size__c s on s.id = i.gvp__Size__c
-  join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
-  left join GVP.Account sup on sup.id = b.gvp__Supplier__c
+  join GVP.gvp__Label__c l on l.Id = i.gvp__Label__c
+  join GVP.gvp__Size__c s on s.Id = i.gvp__Size__c
+  join GVP.gvp__Brand__c b on b.Id = l.gvp__Brand__c
+  left join GVP.Account sup on sup.Id = b.gvp__Supplier__c
   inner Join [GVP].[RecordType] r on i.RecordTypeId = r.ID
 UNION
 Select
@@ -193,9 +193,9 @@ Select
   null as SupplierAccountExternalID
 FROM
   [GVP].[gvp__Item__c] i
-  join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
-  join GVP.gvp__Size__c s on s.id = i.gvp__Size__c
-  join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
+  join GVP.gvp__Label__c l on l.Id = i.gvp__Label__c
+  join GVP.gvp__Size__c s on s.Id = i.gvp__Size__c
+  join GVP.gvp__Brand__c b on b.Id = l.gvp__Brand__c
   inner Join [GVP].[RecordType] r on i.RecordTypeId = r.ID
 UNION
 Select
@@ -233,8 +233,8 @@ Select
   sup.gvp__Account_Key__c as SupplierAccountExternalID
 FROM
   GVP.gvp__Label__c l
-  join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
-  left join GVP.Account sup on sup.id = b.gvp__Supplier__c
+  join GVP.gvp__Brand__c b on b.Id = l.gvp__Brand__c
+  left join GVP.Account sup on sup.Id = b.gvp__Supplier__c
 UNION
 SELECT
   b.Id as ID,
@@ -271,7 +271,7 @@ SELECT
   sup.gvp__Account_Key__c as SupplierAccountExternalID
 FROM
   GVP.gvp__Brand__c b
-  left join GVP.Account sup on sup.id = b.gvp__Supplier__c
+  left join GVP.Account sup on sup.Id = b.gvp__Supplier__c
 UNION
 Select
   sup.Id as ID,
@@ -308,7 +308,7 @@ Select
   sup.gvp__Account_Key__c as SupplierAccountExternalID
 FROM
   GVP.gvp__Brand__c b
-  join GVP.Account sup on sup.id = b.gvp__Supplier__c
+  join GVP.Account sup on sup.Id = b.gvp__Supplier__c
   inner join GVP.RecordType r on sup.RecordTypeId = r.ID
 where
   r.SobjectType = 'Account'

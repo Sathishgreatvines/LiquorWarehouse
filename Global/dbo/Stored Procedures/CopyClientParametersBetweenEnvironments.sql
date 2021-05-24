@@ -16,10 +16,10 @@ begin
       declare @fromenvironmentid int
       declare @toenvironmentid int
 
-      set @clientid = (select clientid from client where ClientName = @clientname)
-      set @defaultclientid = (select clientid from client where ClientName = 'default')
-      set @fromenvironmentid = (select environmentid from Environment where EnvironmentName = @fromenvironment)
-      set @toenvironmentid = (select environmentid from Environment where EnvironmentName = @toenvironment)
+      set @clientid = (select ClientID from client where ClientName = @clientname)
+      set @defaultclientid = (select ClientID from client where ClientName = 'default')
+      set @fromenvironmentid = (select EnvironmentID from Environment where EnvironmentName = @fromenvironment)
+      set @toenvironmentid = (select EnvironmentID from Environment where EnvironmentName = @toenvironment)
 
 
       -- Set the 'Active' value to false for the previous values in @toenvironment
