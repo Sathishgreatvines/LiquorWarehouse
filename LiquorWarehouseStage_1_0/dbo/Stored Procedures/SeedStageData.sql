@@ -23,8 +23,8 @@ begin
     select [State], State_ANSI, County_ANSI, County_Name, ANSI_CI from Global..FIPS_County
 
   truncate table FIPS_Zip
-  insert into FIPS_Zip(ZCTA5, [State], COUNTY, GEOID)
-    select top 1 with ties ZCTA5, [State], COUNTY, GEOID from Global..FIPS_Zip
+  insert into FIPS_Zip(ZCTA5, [State], County, GEOId)
+    select top 1 with ties ZCTA5, [State], County, GEOId from Global..FIPS_Zip
 	order by row_number() over (partition by ZCTA5 order by cast(POPPT as int) Desc)
 
   

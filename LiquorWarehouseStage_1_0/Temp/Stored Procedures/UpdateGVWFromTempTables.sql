@@ -1,4 +1,4 @@
-﻿create procedure temp.UpdateGVWFromTempTables @tablename varchar(40) as
+﻿create procedure Temp.UpdateGVWFromTempTables @tablename varchar(40) as
 begin
   declare @setstatement varchar(7800)
   declare @sql varchar(8000)
