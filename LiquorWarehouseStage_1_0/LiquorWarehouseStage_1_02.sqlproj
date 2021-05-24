@@ -610,6 +610,8 @@
     <Build Include="Temp\Tables\GVWEventCallFact.sql" />
     <Build Include="Temp\Tables\GVWAccountCallFact.sql" />
     <Build Include="Temp\Tables\GVWRADFact.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -632,5 +634,7 @@
     <None Include="CraftRevolutionLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="100ProofLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="TrialMasterLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="Vineyard29LiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>

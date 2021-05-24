@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIN].[gvp__Analytics_Field__c]
+﻿CREATE TABLE [SFIn].[gvp__Analytics_Field__c]
 (
 	Id CHAR(18) NOT NULL PRIMARY KEY, 
 	IsDeleted varchar(10) not null,

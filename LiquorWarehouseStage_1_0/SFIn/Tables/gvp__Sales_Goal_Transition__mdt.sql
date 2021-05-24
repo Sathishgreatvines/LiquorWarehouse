@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIN].[gvp__Sales_Goal_Transition__mdt]
+﻿CREATE TABLE [SFIn].[gvp__Sales_Goal_Transition__mdt]
 (
 	Id CHAR(18) NOT NULL, 
     DeveloperName NVARCHAR(100) NULL, 

@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.GVPgvp__Account_Call__c
+﻿CREATE TABLE Temp.GVPgvp__Account_Call__c
 (
 	[Id] char(18) NOT NULL ,
 	IsDeleted varchar(10) not null,

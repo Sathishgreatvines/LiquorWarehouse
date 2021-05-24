@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.[GVPgvp__Media__c]
+﻿CREATE TABLE Temp.[GVPgvp__Media__c]
 (
   [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
