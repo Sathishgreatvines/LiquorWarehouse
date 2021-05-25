@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.[GVPgvp__Survey_Plan_Question__c]
+﻿CREATE TABLE Temp.[GVPgvp__Survey_Plan_Question__c]
 (
   [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,

@@ -7,8 +7,8 @@ begin
 
   -- Table variable to hold the data
   declare @parametervalues table (
-    clientid int,
-    clientname varchar(100),
+    ClientID int,
+    ClientName varchar(100),
     defaultvalue varchar(100),
     clientvalue varchar(100)
     )
@@ -43,7 +43,7 @@ begin
  
     -- Return the results
     select 
-      clientname, 
+      ClientName, 
       coalesce(clientvalue, defaultvalue)
     from @parametervalues
 

@@ -30,7 +30,7 @@ begin
   begin
     -- If a record already exists for that ruuid, then update it rather than write a new record (this happens when the error pipeline and log results snap both call the logging SP
     if @ConsolidatedExecutionStatus in ('Error') and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
-      update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where RUUID = @ruuid
+      update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where ruuid = @ruuid
 
     else
       insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows, UnchangedRows) values (

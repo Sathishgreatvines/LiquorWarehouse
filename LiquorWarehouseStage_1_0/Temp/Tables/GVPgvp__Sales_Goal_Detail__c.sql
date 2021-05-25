@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.[GVPgvp__Sales_Goal_Detail__c]
+﻿CREATE TABLE Temp.[GVPgvp__Sales_Goal_Detail__c]
 (
 	[Id]                            char(18)      not null,
 	IsDeleted                       varchar(10)   not null,

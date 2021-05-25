@@ -2,7 +2,7 @@
 begin
   declare @projectid varchar(32)
   
-  set @projectid = (select top 1 gvp__Project_Id__c  from sfin.gvp__Analytics_Settings__c where gvp__Project_Id__c<> '*')
+  set @projectid = (select top 1 gvp__Project_Id__c  from SFIn.gvp__Analytics_Settings__c where gvp__Project_Id__c<> '*')
 
   truncate table GoodDataObjectID
     
@@ -10,8 +10,8 @@ begin
     select @projectid, c.name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_ID_Offset__c) 
     from sys.columns c 
       inner join sys.views v on v.object_id = c.object_id
-      inner join sfin.gvp__Analytics_Field_Matrix__mdt afm on afm.MasterLabel = c.name
-      inner join sfin.gvp__Analytics_Field__c af on af.gvp__Field_Identifier__c = afm.gvp__Attribute_Identifier__c
+      inner join SFIn.gvp__Analytics_Field_Matrix__mdt afm on afm.MasterLabel = c.name
+      inner join SFIn.gvp__Analytics_Field__c af on af.gvp__Field_Identifier__c = afm.gvp__Attribute_Identifier__c
     where v.name = 'MasterGoal' 
 
   declare @i int
@@ -56,25 +56,25 @@ begin
   insert into GoodDataObjectID 
     select distinct @projectid, af.Name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_ID_Offset__c)
     from MasterGoal mg
-      inner join sfin.gvp__Analytics_Field__c af on mg.gvp__Goal_Level__c = af.gvp__Field_Identifier__c
-      inner join sfin.gvp__Analytics_Field_Matrix__mdt afm on afm.gvp__Attribute_Identifier__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field__c af on mg.gvp__Goal_Level__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field_Matrix__mdt afm on afm.gvp__Attribute_Identifier__c = af.gvp__Field_Identifier__c
 
   insert into GoodDataSalesGoalPlanField
     select distinct gvp__Sales_Goal_Plan__c, af.Name, 'attribute1', null
     from MasterGoal mg
-      inner join sfin.gvp__Analytics_Field__c af on mg.gvp__Goal_Level__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field__c af on mg.gvp__Goal_Level__c = af.gvp__Field_Identifier__c
 
   -- Insert the secondary attributes
   insert into GoodDataObjectID 
     select distinct @projectid, af.Name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_ID_Offset__c)
     from MasterGoal mg
-      inner join sfin.gvp__Analytics_Field__c af on mg.gvp__Secondary_Attribute__c = af.gvp__Field_Identifier__c
-      inner join sfin.gvp__Analytics_Field_Matrix__mdt afm on afm.gvp__Attribute_Identifier__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field__c af on mg.gvp__Secondary_Attribute__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field_Matrix__mdt afm on afm.gvp__Attribute_Identifier__c = af.gvp__Field_Identifier__c
 
   insert into GoodDataSalesGoalPlanField
     select distinct gvp__Sales_Goal_Plan__c, af.Name, 'attribute2', null
     from MasterGoal mg
-      inner join sfin.gvp__Analytics_Field__c af on mg.gvp__Secondary_Attribute__c = af.gvp__Field_Identifier__c
+      inner join SFIn.gvp__Analytics_Field__c af on mg.gvp__Secondary_Attribute__c = af.gvp__Field_Identifier__c
 
   -- Insert the metrics    
   insert into GoodDataObjectID 
