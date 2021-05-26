@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[WriteToLoadLog] 
   @pipelinename varchar(100), 
   @snaplogicassetid char(36),
-  @ruuid varchar(72),
+  @ruuid varchar(200),
   @executionstatus varchar(25),
   @starttime char(27), 
   @endtime char(27), 
