@@ -14,3 +14,8 @@
     [UnchangedRows] INT NULL, 
     CONSTRAINT [PK_LoadLog] PRIMARY KEY ([LoadLogID])
 )
+GO
+CREATE NONCLUSTERED INDEX [IX_Load_Log_StartTime]
+ON [dbo].[LoadLog] ([ExecutionStatus],[PipelineName])
+INCLUDE ([StartTime])
+GO
