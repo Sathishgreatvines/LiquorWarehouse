@@ -236,7 +236,7 @@ end
     ParameterID int,
     ParameterName varchar(100),
     DefaultValue varchar(500),
-    ClientSpecificValue varchar(100))
+    ClientSpecificValue varchar(500))
 
   -- Create results table with coalesced default and client specific values
   create table #ParametersCoalesced (
