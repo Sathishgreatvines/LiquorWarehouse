@@ -20,7 +20,7 @@
 	Shipping_Country NVARCHAR (40)    NULL,
 	Distributor_Key				VARCHAR (255)    NULL,
 	Dist_Acct_Number			NVARCHAR (40)    NULL,
-	Territory_Key				VARCHAR (255)	 NOT NULL,
+	Territory_Key				VARCHAR (255)	 NULL,
 	Owner						NVARCHAR (80)    NULL,
 	Key_Account					NVARCHAR (100)   NULL,
 	Retailer_Ext_Key			VARCHAR (40)	 NOT NULL,
@@ -76,7 +76,7 @@
 	gvp__Custom_8__c                    NVARCHAR(255) NULL,
 	gvp__Custom_9__c                    NVARCHAR(255) NULL,
 	gvp__Custom_10__c                    NVARCHAR(255) NULL,
-	BDN_Id                      VARCHAR (100)    NOT NULL, 
+	BDN_Id                      VARCHAR (100)    NULL, 
 	SourceFile					VARCHAR(255)	 NULL,
 	CONSTRAINT [PK_Retailer] PRIMARY KEY (Retailer_Key)
 	)
