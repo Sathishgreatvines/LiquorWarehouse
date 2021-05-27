@@ -33,7 +33,7 @@ begin
     update pv set pv.clientvalue = cp.ParameterValue
       from @parametervalues pv
         inner join Client c on c.ClientID = pv.ClientID
-        inner join ClientParameter cp on cp.ClientID = pv.clientid
+        inner join ClientParameter cp on cp.ClientID = pv.ClientID
         inner join Parameter p on cp.ParameterID = p.ParameterID
         inner join Environment e on e.EnvironmentID = cp.EnvironmentID
       where

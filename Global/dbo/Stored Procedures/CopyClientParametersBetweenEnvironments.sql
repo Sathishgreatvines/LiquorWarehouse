@@ -16,8 +16,8 @@ begin
       declare @fromenvironmentid int
       declare @toenvironmentid int
 
-      set @clientid = (select ClientID from client where ClientName = @clientname)
-      set @defaultclientid = (select ClientID from client where ClientName = 'default')
+      set @clientid = (select ClientID from Client where ClientName = @clientname)
+      set @defaultclientid = (select ClientID from Client where ClientName = 'default')
       set @fromenvironmentid = (select EnvironmentID from Environment where EnvironmentName = @fromenvironment)
       set @toenvironmentid = (select EnvironmentID from Environment where EnvironmentName = @toenvironment)
 
