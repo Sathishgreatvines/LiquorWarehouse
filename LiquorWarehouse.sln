@@ -8,6 +8,9 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouseStage_1_02", "LiquorWarehouseStage_1_0\LiquorWarehouseStage_1_02.sqlproj", "{EFCE299A-18BF-485A-A316-8924EB28720F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MiscellaneousQueries", "MiscellaneousQueries\MiscellaneousQueries.sqlproj", "{F4BAF7D2-C77B-4836-8DB0-9A1BE519A242}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70645DB8-73D3-46BA-BBEA-469406910AF5} = {70645DB8-73D3-46BA-BBEA-469406910AF5}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Redshift", "Redshift\Redshift.sqlproj", "{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}"
 EndProject
@@ -18,10 +21,19 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pinata", "Pinata\Pinata.sqlproj", "{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom WGSAustralia", "Custom WGSAustralia\Custom WGSAustralia.sqlproj", "{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trax", "Trax\Trax.sqlproj", "{887D9982-604F-4A73-8B7D-421E4D3D311E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom 100Proof", "Custom 100Proof\Custom 100Proof.sqlproj", "{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

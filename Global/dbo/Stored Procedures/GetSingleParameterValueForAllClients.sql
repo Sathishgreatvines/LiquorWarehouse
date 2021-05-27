@@ -20,7 +20,7 @@ begin
         inner join Client c on c.ClientID = cp.ClientID 
         inner join Parameter p on p.ParameterID = cp.ParameterID
         left outer join Environment e on cp.EnvironmentID = e.EnvironmentID
-      where isnull(e.EnvironmentName, @environment) = @Environment
+      where isnull(e.EnvironmentName, @Environment) = @Environment
         and p.ParameterName = @ParameterName
         and c.ClientName = 'default'
         )
