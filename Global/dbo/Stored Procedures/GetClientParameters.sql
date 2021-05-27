@@ -24,7 +24,7 @@ begin
     EnvironmentName varchar(100),
     ParameterID int,
     ParameterName varchar(100),
-    DefaultValue varchar(100),
+    DefaultValue varchar(500),
     ClientSpecificValue varchar(100))
 
   -- Get all the parameters associated with the 'Default' client
@@ -68,14 +68,14 @@ end
     EnvironmentName varchar(100),
     ParameterID int,
     ParameterName varchar(100),
-    DefaultValue varchar(100),
+    DefaultValue varchar(500),
     ClientSpecificValue varchar(100))
 
   -- Create results table with coalesced default and client specific values for Dev
   create table #ParametersCoalesced1 (
     EnvironmentName varchar(100),
     ParameterName varchar(100),
-    ParameterValue varchar(200))
+    ParameterValue varchar(500))
 
   -- Get all the parameters associated with the 'Default' client
   insert into #Parameters1
@@ -105,14 +105,14 @@ end
     EnvironmentName varchar(100),
     ParameterID int,
     ParameterName varchar(100),
-    DefaultValue varchar(100),
+    DefaultValue varchar(500),
     ClientSpecificValue varchar(100))
 
   -- Create results table with coalesced default and client specific values for Test
   create table #ParametersCoalesced2 (
     EnvironmentName varchar(100),
     ParameterName varchar(100),
-    ParameterValue varchar(200))
+    ParameterValue varchar(500))
 
   -- Get all the parameters associated with the 'Default' client for Test
   insert into #Parameters2
@@ -142,14 +142,14 @@ end
     EnvironmentName varchar(100),
     ParameterID int,
     ParameterName varchar(100),
-    DefaultValue varchar(100),
+    DefaultValue varchar(500),
     ClientSpecificValue varchar(100))
 
   -- Create results table with coalesced default and client specific values for Prod
   create table #ParametersCoalesced3 (
     EnvironmentName varchar(100),
     ParameterName varchar(100),
-    ParameterValue varchar(200))
+    ParameterValue varchar(500))
 
   -- Get all the parameters associated with the 'Default' client for Prod
   insert into #Parameters3
@@ -235,14 +235,14 @@ end
     EnvironmentName varchar(100),
     ParameterID int,
     ParameterName varchar(100),
-    DefaultValue varchar(100),
+    DefaultValue varchar(500),
     ClientSpecificValue varchar(100))
 
   -- Create results table with coalesced default and client specific values
   create table #ParametersCoalesced (
     EnvironmentName varchar(100),
     ParameterName varchar(100),
-    ParameterValue varchar(200))
+    ParameterValue varchar(500))
 
   -- Get all the parameters associated with the 'Default' client
   insert into #Parameters
