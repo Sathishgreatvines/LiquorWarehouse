@@ -1,4 +1,4 @@
-﻿CREATE procedure AddParameter @parametername varchar(100), @description varchar(200), @datatype varchar(10), @defaultvalue varchar(100) as
+﻿CREATE procedure AddParameter @parametername varchar(100), @description varchar(200), @datatype varchar(10), @defaultvalue varchar(500) as
 begin
   declare @DefaultClientID int
   declare @NewParameterID int

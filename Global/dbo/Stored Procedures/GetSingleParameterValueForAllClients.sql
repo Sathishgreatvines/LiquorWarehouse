@@ -9,8 +9,8 @@ begin
   declare @parametervalues table (
     ClientID int,
     ClientName varchar(100),
-    defaultvalue varchar(100),
-    clientvalue varchar(100)
+    defaultvalue varchar(500),
+    clientvalue varchar(500)
     )
 
     -- Get the default value for the parameter.  Environment can either be null for the default (as it is as of 20201106) or a specific environment (as in a change request in the queue)
