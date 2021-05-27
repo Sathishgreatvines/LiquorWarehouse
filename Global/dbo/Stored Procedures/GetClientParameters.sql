@@ -25,7 +25,7 @@ begin
     ParameterID int,
     ParameterName varchar(100),
     DefaultValue varchar(500),
-    ClientSpecificValue varchar(100))
+    ClientSpecificValue varchar(500))
 
   -- Get all the parameters associated with the 'Default' client
     insert into #ParametersDefault
@@ -43,8 +43,8 @@ begin
 	else
   begin
   
-    declare @sqldefault varchar(2000)
-    declare @pivotcolumnsdefault varchar(2000)
+    declare @sqldefault varchar(3000)
+    declare @pivotcolumnsdefault varchar(3000)
 
   -- Get the column names
     select @pivotcolumnsdefault = coalesce(@pivotcolumnsdefault + ', ','') + ParameterName
@@ -69,7 +69,7 @@ end
     ParameterID int,
     ParameterName varchar(100),
     DefaultValue varchar(500),
-    ClientSpecificValue varchar(100))
+    ClientSpecificValue varchar(500))
 
   -- Create results table with coalesced default and client specific values for Dev
   create table #ParametersCoalesced1 (
@@ -106,7 +106,7 @@ end
     ParameterID int,
     ParameterName varchar(100),
     DefaultValue varchar(500),
-    ClientSpecificValue varchar(100))
+    ClientSpecificValue varchar(500))
 
   -- Create results table with coalesced default and client specific values for Test
   create table #ParametersCoalesced2 (
@@ -143,7 +143,7 @@ end
     ParameterID int,
     ParameterName varchar(100),
     DefaultValue varchar(500),
-    ClientSpecificValue varchar(100))
+    ClientSpecificValue varchar(500))
 
   -- Create results table with coalesced default and client specific values for Prod
   create table #ParametersCoalesced3 (
@@ -189,12 +189,12 @@ end
   else
   begin
   
-    declare @sql1 varchar(2000)
-    declare @pivotcolumns1 varchar(2000)
-	declare @sql2 varchar(2000)
-    declare @pivotcolumns2 varchar(2000)
-	declare @sql3 varchar(2000)
-    declare @pivotcolumns3 varchar(2000)
+    declare @sql1 varchar(3000)
+    declare @pivotcolumns1 varchar(3000)
+	declare @sql2 varchar(3000)
+    declare @pivotcolumns2 varchar(3000)
+	declare @sql3 varchar(3000)
+    declare @pivotcolumns3 varchar(3000)
 
   -- Get the column names
     select @pivotcolumns1 = coalesce(@pivotcolumns1 + ', ','') + ParameterName
@@ -274,8 +274,8 @@ end
   else
   begin
   
-    declare @sql varchar(2000)
-    declare @pivotcolumns varchar(2000)
+    declare @sql varchar(3000)
+    declare @pivotcolumns varchar(3000)
 
     -- Get the column names
     select @pivotcolumns =  coalesce(@pivotcolumns + ', ','')  + ParameterName 
