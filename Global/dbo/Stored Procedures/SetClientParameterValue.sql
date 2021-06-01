@@ -2,7 +2,7 @@
   @clientname varchar(100), 
   @environmentname varchar(100),
   @parametername varchar(100), 
-  @parametervalue varchar(100)
+  @parametervalue varchar(500)
 as
 begin
   declare @clientid int

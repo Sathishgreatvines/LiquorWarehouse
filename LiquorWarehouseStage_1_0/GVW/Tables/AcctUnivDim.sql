@@ -1,5 +1,4 @@
-﻿CREATE TABLE [GVW].[AcctUnivDim] (
-	[GVWAcctUnivSKey] int identity(1,1),
+﻿CREATE TABLE [GVW].[AcctUnivDim] ([GVWAcctUnivSKey] int identity(1,1),
     [ID]                    VARCHAR(18)  NOT NULL,
     [Name]                  NVARCHAR (250)  NULL,
     [Granularity]           VARCHAR (20)   NULL,
@@ -67,7 +66,7 @@
     [ActiveIndicator]          VARCHAR (25)   NULL,
     [MarketingGroupCode]      VARCHAR (20) NULL,
     [MarketingGroupName]      NVARCHAR (100) NULL,
-    [MarketingGroupOwnership] CHAR (20) NULL,
+    [MarketingGroupOwnership] NVARCHAR(255) NULL,
     [UltimateParentCode]      VARCHAR(18)        NULL,
     [UltimateParentName]      NVARCHAR (250)  NULL,
     [ImmediateParentName]     NVARCHAR (250)  NULL,
