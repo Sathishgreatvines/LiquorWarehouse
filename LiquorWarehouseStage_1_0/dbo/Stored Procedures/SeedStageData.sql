@@ -7,7 +7,7 @@ begin
   insert into Source values ('LiquorWarehouse')
   insert into Source values ('Salesforce')
   insert into Source values ('ERP')
-
+  insert into Source values ('SRS')
   
   /* Geo Data */
   truncate table [State]

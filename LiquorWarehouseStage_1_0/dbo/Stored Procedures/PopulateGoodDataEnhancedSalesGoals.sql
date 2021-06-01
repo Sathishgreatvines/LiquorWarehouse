@@ -7,7 +7,7 @@ begin
   truncate table GoodDataObjectID
     
   insert into GoodDataObjectID
-    select @projectid, c.name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_ID_Offset__c) 
+    select @projectid, c.name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_Id_Offset__c) 
     from sys.columns c 
       inner join sys.views v on v.object_id = c.object_id
       inner join SFIn.gvp__Analytics_Field_Matrix__mdt afm on afm.MasterLabel = c.name
@@ -29,7 +29,7 @@ begin
 
   while @i <= @numcolumns
   begin
-    select @currentcolumn = fieldname, @currentcolumnOID = GDObjectID from GoodDataObjectID where id = @i
+    select @currentcolumn = FieldName, @currentcolumnOID = GDObjectID from GoodDataObjectID where ID = @i
 
     set @GoodDataElementIDSQL = 
       'insert into GoodDataElementID
@@ -66,7 +66,7 @@ begin
 
   -- Insert the secondary attributes
   insert into GoodDataObjectID 
-    select distinct @projectid, af.Name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_ID_Offset__c)
+    select distinct @projectid, af.Name, convert(int, gvp__Object_Id__c + afm.gvp__Attribute_Id_Offset__c)
     from MasterGoal mg
       inner join SFIn.gvp__Analytics_Field__c af on mg.gvp__Secondary_Attribute__c = af.gvp__Field_Identifier__c
       inner join SFIn.gvp__Analytics_Field_Matrix__mdt afm on afm.gvp__Attribute_Identifier__c = af.gvp__Field_Identifier__c
