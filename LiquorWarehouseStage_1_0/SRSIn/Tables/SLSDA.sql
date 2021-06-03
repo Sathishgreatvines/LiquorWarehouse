@@ -43,5 +43,6 @@
 	[RSREFINV] [varchar](25) NULL,
 	[RSFRONT4] [money] NOT NULL,
 	[RSPERIOD] [money] NOT NULL,
-	[FILENAME] [varchar](100) NOT NULL
+	[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 )

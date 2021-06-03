@@ -3,9 +3,9 @@
 	RECORDTYPE [varchar](6) NOT NULL,
 	DSSUPP     [varchar](10) NOT NULL,
 	DSDIST     [varchar](10) NOT NULL,
-	DSNAME     [varchar](40) NOT NULL,
-	DSSTR      [varchar](25) NOT NULL,
-	DSCITY     [varchar](15) NOT NULL,
+	DSNAME     NVARCHAR(40) NOT NULL,
+	DSSTR      NVARCHAR(25) NOT NULL,
+	DSCITY     NVARCHAR(15) NOT NULL,
 	DSSTAT     [varchar](2) NOT NULL,
 	DSZIP      NUMERIC(5,0) NOT NULL,
 	DSPHON      NUMERIC(11) NOT NULL,
@@ -27,5 +27,6 @@
 	DSMARKET [varchar](60)  NULL,
 	DSREP# [varchar](10)  NULL,
 	DSREPNAME [varchar](60)  NULL,
-	[FILENAME] VARCHAR(100) NOT NULL
+	[FILENAME] VARCHAR(100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 )
