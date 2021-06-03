@@ -25,7 +25,7 @@
 	[CUBE] [numeric](4, 2) NULL,
 	[LASTCHNG] [varchar](8) NULL,
 	[STATUS] [varchar](1) NULL,
-	[ITCTYPEin] [varchar](1) NULL,
+	[ITCTYPE] [varchar](1) NULL,
 	[SRSVALUE] [numeric](3, 0) NULL,
 	[TERRPTR] [varchar](20) NULL,
 	[CAT1] [varchar](20) NULL,
