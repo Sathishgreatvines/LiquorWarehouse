@@ -1,79 +1,83 @@
-﻿CREATE TABLE [SRSIn].[OUTDA](
-	[RECORDTYPE] [varchar](6) NOT NULL
-	,[DISTID] [varchar](25) NOT NULL
-	,[VIPSRS] [varchar](5) NULL
-	,[ROCUST] [varchar](15) NOT NULL
-	,[RODBA] [varchar](35) NOT NULL
-	,[ROLNAM] [varchar](35) NULL
-	,[ROADDR1] [varchar](35) NOT NULL
-	,[ROADDR2] [varchar](35) NULL
-	,[ROCITY] [varchar](30) NOT NULL
-	,[ROSTATE] [varchar](2) NOT NULL
-	,[ROZIP9] [varchar](9) NULL
-	,[ROCTRY] [varchar](3) NULL
-	,[ROPHONE] [varchar](20) NULL
-	,[ROCHN] [varchar](10) NULL
-	,[ROCHN2] [varchar](10) NULL
-	,[ROCOT] [varchar](2) NOT NULL
-	,[ROFWN] [varchar](1) NULL
-	,[ROCSTS] [varchar](1) NULL
-	,[RODISP] [varchar](2) NULL
-	,[ROETHN] [varchar](2) NULL
-	,[ROIVOL] [varchar](1) NULL
-	,[ROLIFE] [varchar](1) NULL
-	,[ROOCC] [varchar](2) NULL
-	,[ROPAGE] [varchar](2) NULL
-	,[ROPTYPE] [varchar](1) NULL
-	,[ROWMNT] [varchar](2) NULL
-	,[ROSMVT] [varchar](2) NULL
-	,[ROMMVT] [varchar](2) NULL
-	,[ROSELL] [varchar](1) NULL
-	,[ROSM1] [varchar](5) NOT NULL
-	,[ROSM2] [varchar](5) NULL
-	,[ROSTORE] [varchar](10) NULL
-	,[ROSTS] [varchar](1) NOT NULL
-	,[TERR01] [varchar](1) NULL
-	,[TERR02] [varchar](1) NULL
-	,[TERR03] [varchar](1) NULL
-	,[TERR04] [varchar](1) NULL
-	,[TERR05] [varchar](1) NULL
-	,[TERR06] [varchar](1) NULL
-	,[TERR07] [varchar](1) NULL
-	,[TERR08] [varchar](1) NULL
-	,[TERR09] [varchar](1) NULL
-	,[TERR10] [varchar](1) NULL
-	,[TERR11] [varchar](1) NULL
-	,[TERR12] [varchar](1) NULL
-	,[TERR13] [varchar](1) NULL
-	,[TERR14] [varchar](1) NULL
-	,[TERR15] [varchar](1) NULL
-	,[TERR16] [varchar](1) NULL
-	,[TERR17] [varchar](1) NULL
-	,[TERR18] [varchar](1) NULL
-	,[TERR19] [varchar](1) NULL
-	,[TERR21] [varchar](1) NULL
-	,[TERR22] [varchar](1) NULL
-	,[TERR23] [varchar](1) NULL
-	,[TERR24] [varchar](1) NULL
-	,[TERR25] [varchar](1) NULL
-	,[TERR26] [varchar](1) NULL
-	,[TERR27] [varchar](1) NULL
-	,[TERR28] [varchar](1) NULL
-	,[TERR29] [varchar](1) NULL
-	,[TERR30] [varchar](1) NULL
-	,[TDOUTCD] [varchar](7) NULL
-	,[TDMGROUP] [varchar](6) NULL
-	,[VIPID] [varchar](10) NULL
-	,[VIPMALT] [varchar](1) NULL
-	,[ROBUYER] [varchar](35) NULL
-	,[ROLICTYPE] [varchar](1) NULL
-	,[ROWHSE] [varchar](8) NULL
-	,[ROPARENT] [varchar](25) NULL
-	,[ROLICENSE] [varchar](15) NULL
-	,[ROOPEN] [numeric](16,0)  NULL
-	,[ROCLOSED] [numeric](16,0)  NULL
-	,[ROSEASOP] [numeric](16,0)  NULL
-	,[ROSEASCL] [numeric](16,0)  NULL
-	,[ROPLANO] [varchar](30)  NULL
-	,[FILENAME] [varchar](100) NOT NULL
-)
+﻿CREATE TABLE [SRSIn].[OUTDA] (
+    [RECORDTYPE] VARCHAR (6)   NOT NULL,
+    [DISTID]     VARCHAR (25)  NOT NULL,
+    [VIPSRS]     VARCHAR (5)   NULL,
+    [ROCUST]     VARCHAR (15)  NOT NULL,
+    [RODBA]      NVARCHAR (35) NOT NULL,
+    [ROLNAM]     NVARCHAR (35) NULL,
+    [ROADDR1]    NVARCHAR (35) NOT NULL,
+    [ROADDR2]    NVARCHAR (35) NULL,
+    [ROCITY]     VARCHAR (30)  NOT NULL,
+    [ROSTATE]    VARCHAR (2)   NOT NULL,
+    [ROZIP9]     VARCHAR (9)   NULL,
+    [ROCTRY]     VARCHAR (3)   NULL,
+    [ROPHONE]    VARCHAR (20)  NULL,
+    [ROCHN]      VARCHAR (10)  NULL,
+    [ROCHN2]     VARCHAR (10)  NULL,
+    [ROCOT]      VARCHAR (2)   NOT NULL,
+    [ROFWN]      VARCHAR (1)   NULL,
+    [ROCSTS]     VARCHAR (1)   NULL,
+    [RODISP]     VARCHAR (2)   NULL,
+    [ROETHN]     VARCHAR (2)   NULL,
+    [ROIVOL]     VARCHAR (1)   NULL,
+    [ROLIFE]     VARCHAR (1)   NULL,
+    [ROOCC]      VARCHAR (2)   NULL,
+    [ROPAGE]     VARCHAR (2)   NULL,
+    [ROPTYPE]    VARCHAR (1)   NULL,
+    [ROWMNT]     VARCHAR (2)   NULL,
+    [ROSMVT]     VARCHAR (2)   NULL,
+    [ROMMVT]     VARCHAR (2)   NULL,
+    [ROSELL]     VARCHAR (1)   NULL,
+    [ROSM1]      VARCHAR (5)   NOT NULL,
+    [ROSM2]      VARCHAR (5)   NULL,
+    [ROSTORE]    VARCHAR (10)  NULL,
+    [ROSTS]      VARCHAR (1)   NOT NULL,
+    [TERR01]     VARCHAR (1)   NULL,
+    [TERR02]     VARCHAR (1)   NULL,
+    [TERR03]     VARCHAR (1)   NULL,
+    [TERR04]     VARCHAR (1)   NULL,
+    [TERR05]     VARCHAR (1)   NULL,
+    [TERR06]     VARCHAR (1)   NULL,
+    [TERR07]     VARCHAR (1)   NULL,
+    [TERR08]     VARCHAR (1)   NULL,
+    [TERR09]     VARCHAR (1)   NULL,
+    [TERR10]     VARCHAR (1)   NULL,
+    [TERR11]     VARCHAR (1)   NULL,
+    [TERR12]     VARCHAR (1)   NULL,
+    [TERR13]     VARCHAR (1)   NULL,
+    [TERR14]     VARCHAR (1)   NULL,
+    [TERR15]     VARCHAR (1)   NULL,
+    [TERR16]     VARCHAR (1)   NULL,
+    [TERR17]     VARCHAR (1)   NULL,
+    [TERR18]     VARCHAR (1)   NULL,
+    [TERR19]     VARCHAR (1)   NULL,
+    [TERR20]     VARCHAR (1)   NULL,
+    [TERR21]     VARCHAR (1)   NULL,
+    [TERR22]     VARCHAR (1)   NULL,
+    [TERR23]     VARCHAR (1)   NULL,
+    [TERR24]     VARCHAR (1)   NULL,
+    [TERR25]     VARCHAR (1)   NULL,
+    [TERR26]     VARCHAR (1)   NULL,
+    [TERR27]     VARCHAR (1)   NULL,
+    [TERR28]     VARCHAR (1)   NULL,
+    [TERR29]     VARCHAR (1)   NULL,
+    [TERR30]     VARCHAR (1)   NULL,
+    [TDOUTCD]    VARCHAR (7)   NULL,
+    [TDMGROUP]   VARCHAR (6)   NULL,
+    [VIPID]      VARCHAR (10)  NULL,
+    [VIPMALT]    VARCHAR (1)   NULL,
+    [ROBUYER]    VARCHAR (35)  NULL,
+    [ROLICTYPE]  VARCHAR (1)   NULL,
+    [ROWHSE]     VARCHAR (8)   NULL,
+    [ROPARENT]   VARCHAR (25)  NULL,
+    [ROLICENSE]  VARCHAR (15)  NULL,
+    [ROOPEN]     NUMERIC (16)  NULL,
+    [ROCLOSED]   NUMERIC (16)  NULL,
+    [ROSEASOP]   NUMERIC (16)  NULL,
+    [ROSEASCL]   NUMERIC (16)  NULL,
+    [ROPLANO]    VARCHAR (30)  NULL,
+    [FILENAME]   VARCHAR (100) NOT NULL,
+    [SEQID]      INT           IDENTITY (1, 1) NOT NULL
+);
+GO
+
