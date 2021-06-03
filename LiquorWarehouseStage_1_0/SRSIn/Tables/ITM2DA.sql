@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [SRSIn].[ITM2DA](
-	[RECORDTYPE] [varchar](10) NOT NULL,
+    [RECORDTYPE] [varchar](10) NOT NULL,
 	[SUPPID] [varchar](3) NOT NULL,
 	[DISTID] [varchar](15) NULL,
 	[ITEM] [varchar](20) NOT NULL,
@@ -65,5 +65,6 @@
 	[IECATLABEL11] [varchar](80) NULL,
 	[IECATID12] [varchar](20) NULL,
 	[IECATLABEL12] [varchar](80) NULL,
-	[FILENAME] [varchar](100) NULL
+	[FILENAME] [varchar](100) NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 ) 

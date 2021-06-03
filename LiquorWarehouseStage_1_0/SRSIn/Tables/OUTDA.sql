@@ -3,10 +3,10 @@
 	,[DISTID] [varchar](25) NOT NULL
 	,[VIPSRS] [varchar](5) NULL
 	,[ROCUST] [varchar](15) NOT NULL
-	,[RODBA] [varchar](35) NOT NULL
-	,[ROLNAM] [varchar](35) NULL
-	,[ROADDR1] [varchar](35) NOT NULL
-	,[ROADDR2] [varchar](35) NULL
+	,[RODBA] NVARCHAR(35) NOT NULL
+	,[ROLNAM] NVARCHAR(35) NULL
+	,[ROADDR1] NVARCHAR(35) NOT NULL
+	,[ROADDR2] NVARCHAR(35) NULL
 	,[ROCITY] [varchar](30) NOT NULL
 	,[ROSTATE] [varchar](2) NOT NULL
 	,[ROZIP9] [varchar](9) NULL
@@ -51,7 +51,8 @@
 	,[TERR17] [varchar](1) NULL
 	,[TERR18] [varchar](1) NULL
 	,[TERR19] [varchar](1) NULL
-	,[TERR21] [varchar](1) NULL
+	,[TERR20] [varchar](1) NULL
+    ,[TERR21] [varchar](1) NULL
 	,[TERR22] [varchar](1) NULL
 	,[TERR23] [varchar](1) NULL
 	,[TERR24] [varchar](1) NULL
@@ -75,5 +76,6 @@
 	,[ROSEASOP] [numeric](16,0)  NULL
 	,[ROSEASCL] [numeric](16,0)  NULL
 	,[ROPLANO] [varchar](30)  NULL
-	,[FILENAME] [varchar](100) NOT NULL
+	,[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 )

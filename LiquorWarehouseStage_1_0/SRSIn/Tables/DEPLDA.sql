@@ -41,5 +41,6 @@
 	[INAVGSLS] [numeric](8, 0) NULL,
 	[INPARENT] [varchar](8) NULL,
 	[SMPERIOD] [numeric](6, 0) NOT NULL,
-	[FILENAME] [varchar](100) NOT NULL
+	[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 )

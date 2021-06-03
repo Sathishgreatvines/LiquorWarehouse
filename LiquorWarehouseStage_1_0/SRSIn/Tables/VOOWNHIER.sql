@@ -10,5 +10,6 @@
 	[VPOCHNHCD4] [numeric](10, 0) NULL,
 	[VPOCHNHNM4] [varchar](35) NULL,
 	[VPOCHNHSTAT] [varchar](1) NULL,
-	[FILENAME] [varchar](100) NOT NULL
+	[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 )
