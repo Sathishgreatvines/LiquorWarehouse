@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.[GVPgvp__Survey_Plan_Question__c]
+﻿CREATE TABLE Temp.[GVPgvp__Survey_Plan_Question__c]
 (
   [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
@@ -22,7 +22,7 @@
 	gvp__Label__c char(18) null,
 	gvp__Objective_Creation__c nvarchar(100) null,
 	gvp__Placement__c char(18) null,
-	gvp__Question_Key__c char(30) null,
+	gvp__Question_Key__c NVARCHAR(255) null,
 	gvp__Question_List__c nvarchar(300) null,
 	gvp__Question_Text__c nvarchar(500) null,
 	gvp__Related_Competitor__c char(18) null,

@@ -7,10 +7,10 @@ begin
 
   -- Table variable to hold the data
   declare @parametervalues table (
-    clientid int,
-    clientname varchar(100),
-    defaultvalue varchar(100),
-    clientvalue varchar(100)
+    ClientID int,
+    ClientName varchar(100),
+    defaultvalue varchar(500),
+    clientvalue varchar(500)
     )
 
     -- Get the default value for the parameter.  Environment can either be null for the default (as it is as of 20201106) or a specific environment (as in a change request in the queue)
@@ -20,7 +20,7 @@ begin
         inner join Client c on c.ClientID = cp.ClientID 
         inner join Parameter p on p.ParameterID = cp.ParameterID
         left outer join Environment e on cp.EnvironmentID = e.EnvironmentID
-      where isnull(e.EnvironmentName, @environment) = @Environment
+      where isnull(e.EnvironmentName, @Environment) = @Environment
         and p.ParameterName = @ParameterName
         and c.ClientName = 'default'
         )
@@ -33,7 +33,7 @@ begin
     update pv set pv.clientvalue = cp.ParameterValue
       from @parametervalues pv
         inner join Client c on c.ClientID = pv.ClientID
-        inner join ClientParameter cp on cp.ClientID = pv.clientid
+        inner join ClientParameter cp on cp.ClientID = pv.ClientID
         inner join Parameter p on cp.ParameterID = p.ParameterID
         inner join Environment e on e.EnvironmentID = cp.EnvironmentID
       where
@@ -43,7 +43,7 @@ begin
  
     -- Return the results
     select 
-      clientname, 
+      ClientName, 
       coalesce(clientvalue, defaultvalue)
     from @parametervalues
 

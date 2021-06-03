@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.GVPgvp__Sales_Goal__c
+﻿CREATE TABLE Temp.GVPgvp__Sales_Goal__c
 (
   [Id] CHAR(18) NOT NULL, 
   OwnerId char(18) not null,

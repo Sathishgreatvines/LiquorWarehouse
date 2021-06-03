@@ -1,5 +1,5 @@
-﻿CREATE TABLE [SRSIn].[ITM2DA](
-	[RECORDTYPE] [varchar](10) NOT NULL,
+CREATE TABLE [SRSIn].[ITM2DA](
+    [RECORDTYPE] [varchar](10) NOT NULL,
 	[SUPPID] [varchar](3) NOT NULL,
 	[DISTID] [varchar](15) NULL,
 	[ITEM] [varchar](20) NOT NULL,
@@ -26,7 +26,6 @@
 	[LASTCHNG] [varchar](8) NULL,
 	[STATUS] [varchar](1) NULL,
 	[ITCTYPE] [varchar](1) NULL,
-	[SRSVALUE] [numeric](3, 0) NULL,
 	[TERRPTR] [varchar](20) NULL,
 	[CAT1] [varchar](20) NULL,
 	[CAT2] [varchar](20) NULL,
@@ -66,5 +65,6 @@
 	[IECATLABEL11] [varchar](80) NULL,
 	[IECATID12] [varchar](20) NULL,
 	[IECATLABEL12] [varchar](80) NULL,
-	[FILENAME] [varchar](100) NULL
+	[FILENAME] [varchar](100) NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
 ) 

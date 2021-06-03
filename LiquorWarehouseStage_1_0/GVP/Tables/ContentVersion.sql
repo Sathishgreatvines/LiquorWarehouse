@@ -3,7 +3,7 @@
 	[ContentDocumentId]												CHAR (18) NULL,
 	[RecordTypeId]														CHAR (18) NULL,
 	[IsLatest]               	                VARCHAR (10) NULL,
-	[ContentUrl]															NVARCHAR (250) NULL,
+	[ContentUrl]															NVARCHAR (300) NULL,
 	[VersionNumber]						 								VARCHAR (10) NULL,
 	[Title]         													VARCHAR (255) NULL,
 	[Description]                             NVARCHAR (500)  NULL,

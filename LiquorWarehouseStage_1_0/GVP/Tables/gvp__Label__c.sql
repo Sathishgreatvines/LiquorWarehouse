@@ -28,7 +28,7 @@
     [gvp__Visible_on_Auth__c]    VARCHAR (10)   NULL,
     [gvp__Custom_Checkbox_1__c] NVARCHAR(100) NULL, 
     [gvp__Custom_Checkbox_2__c] NVARCHAR(100) NULL, 
-    [gvp__Attachments__c]        DECIMAL (4, 1) NULL,
+    [gvp__Attachments__c]        DECIMAL (12, 0) NULL,
     [gvp__Custom_Picklist_1__c]  NVARCHAR (100)  NULL,
     [gvp__Custom_Picklist_2__c]  NVARCHAR (100)  NULL,
     CONSTRAINT [PK_gvp__Label__c] PRIMARY KEY CLUSTERED ([Id] ASC)

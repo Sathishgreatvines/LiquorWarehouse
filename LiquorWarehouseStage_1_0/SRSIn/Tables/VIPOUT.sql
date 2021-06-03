@@ -1,12 +1,12 @@
-﻿CREATE TABLE [SRSIn].[VIPOUT] (
+CREATE TABLE [SRSIn].[VIPOUT] (
     [RECORDTYPE] VARCHAR (6)     NOT NULL,
     [DISTID]     VARCHAR (8)     NULL,
     [RSCUST]     VARCHAR (25)    NULL,
     [VPID#]      NUMERIC (10)    NOT NULL,
-    [VPDBA]      VARCHAR (35)    NOT NULL,
-    [VPLNAM]     VARCHAR (35)    NULL,
-    [VPADDR]     VARCHAR (35)    NOT NULL,
-    [VPADDR2]    VARCHAR (35)    NULL,
+    [VPDBA]      NVARCHAR (35)    NOT NULL,
+    [VPLNAM]     NVARCHAR (35)    NULL,
+    [VPADDR]     NVARCHAR (35)    NOT NULL,
+    [VPADDR2]    NVARCHAR (35)    NULL,
     [VPCITY]     VARCHAR (30)    NOT NULL,
     [VPSTAT]     VARCHAR (2)     NOT NULL,
     [VPZIP9]     VARCHAR (9)     NULL,
@@ -56,6 +56,4 @@
     [ROLLUPID]   VARCHAR (128)   NULL,
     [FILENAME]   VARCHAR (100)   NOT NULL,
     [SEQID]      INT             IDENTITY (1, 1) NOT NULL
-);
-GO
-
+)

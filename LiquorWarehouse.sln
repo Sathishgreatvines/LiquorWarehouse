@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30225.117
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Global", "Global\Global.sqlproj", "{70645DB8-73D3-46BA-BBEA-469406910AF5}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouseStage_1_02", "LiquorWarehouseStage_1_0\LiquorWarehouseStage_1_02.sqlproj", "{EFCE299A-18BF-485A-A316-8924EB28720F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MiscellaneousQueries", "MiscellaneousQueries\MiscellaneousQueries.sqlproj", "{F4BAF7D2-C77B-4836-8DB0-9A1BE519A242}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70645DB8-73D3-46BA-BBEA-469406910AF5} = {70645DB8-73D3-46BA-BBEA-469406910AF5}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Redshift", "Redshift\Redshift.sqlproj", "{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}"
 EndProject
@@ -18,8 +21,19 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pinata", "Pinata\Pinata.sqlproj", "{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom WGSAustralia", "Custom WGSAustralia\Custom WGSAustralia.sqlproj", "{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trax", "Trax\Trax.sqlproj", "{887D9982-604F-4A73-8B7D-421E4D3D311E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom 100Proof", "Custom 100Proof\Custom 100Proof.sqlproj", "{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCE299A-18BF-485A-A316-8924EB28720F} = {EFCE299A-18BF-485A-A316-8924EB28720F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +122,15 @@ Global
 		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FBA23F-ED7E-40B8-BA16-604F1BF3B720}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

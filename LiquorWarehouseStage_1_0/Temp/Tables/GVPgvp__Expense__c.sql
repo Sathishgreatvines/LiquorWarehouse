@@ -1,4 +1,4 @@
-﻿CREATE TABLE temp.[GVPgvp__Expense__c]
+﻿CREATE TABLE Temp.[GVPgvp__Expense__c]
 (
   [Id] char(18) NOT NULL, 
 	OwnerId char(18) not null,

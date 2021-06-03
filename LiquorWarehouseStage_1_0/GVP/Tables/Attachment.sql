@@ -17,4 +17,8 @@
   [Description] NVARCHAR(300) NULL, 
   CONSTRAINT [PK_Attachment] PRIMARY KEY ([Id])
 )
-
+GO
+CREATE NONCLUSTERED INDEX [IX_GVP_Attachment_ParentId]
+ON [GVP].[Attachment] ([ParentIdType])
+INCLUDE ([ParentId])
+GO

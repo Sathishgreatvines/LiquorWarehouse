@@ -2,7 +2,7 @@
 begin
   delete p from ClientParameter p inner join Client c on p.ClientID = c.ClientID where ClientName = @clientname
 
-  delete from client where ClientName = @clientname
+  delete from Client where ClientName = @clientname
 
 end
 

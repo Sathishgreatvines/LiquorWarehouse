@@ -605,6 +605,15 @@
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="dbo\Tables\GoalLevel.sql" />
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="GVP\Tables\gvp__Inventory__c.sql" />
+    <Build Include="Temp\Tables\GVWInventoryFact.sql" />
+    <Build Include="Temp\Tables\GVWEventCallFact.sql" />
+    <Build Include="Temp\Tables\GVWAccountCallFact.sql" />
+    <Build Include="Temp\Tables\GVWRADFact.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
     <Build Include="SRSIn\Tables\SRSCAL.sql" />
     <Build Include="SRSIn\Tables\ORDDA.sql" />
     <Build Include="SRSIn\Tables\INVDA.sql" />
@@ -662,5 +671,12 @@
     <None Include="RNDCLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="aaAsheeshLiquorWarehouseStage_1_03_05.publish.xml" />
     <None Include="aaHemantLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="CraftRevolutionLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="CraftRevolutionLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="100ProofLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="TrialMasterLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="Vineyard29LiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="WesternSpirits_LiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
