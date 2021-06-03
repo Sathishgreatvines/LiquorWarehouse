@@ -13,7 +13,7 @@
 	LastReferencedDate			datetime	   null,
 	gvp__Date_of_Data__c        date           not null,
 	gvp__Inventory_Item_Key__c  varchar(255)   not null,
-	gvp__Item_c				    char(18)       not null,
+	gvp__Item__c				    char(18)       not null,
 	gvp__Item_Lookup__c         char(18)       null,
 	gvp__Item_Number__c         varchar(255)   not null,
 	gvp__Location__c            varchar(255)   null,
