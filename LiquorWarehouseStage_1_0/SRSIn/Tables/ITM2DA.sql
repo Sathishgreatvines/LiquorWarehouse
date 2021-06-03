@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[ITM2DA](
+CREATE TABLE [SRSIn].[ITM2DA](
     [RECORDTYPE] [varchar](10) NOT NULL,
 	[SUPPID] [varchar](3) NOT NULL,
 	[DISTID] [varchar](15) NULL,

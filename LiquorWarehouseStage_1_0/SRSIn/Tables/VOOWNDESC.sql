@@ -9,5 +9,5 @@
 	VPCHNHZIP [varchar](9)NULL,
 	VPCHNHPHN [varchar](20)NULL,
 	[FILENAME] VARCHAR(100) NOT NULL,
-	[SEQID] [int] IDENTITY(1,1) NOT NULL
+  [SEQID]      INT           IDENTITY (1, 1) NOT NULL
 )
