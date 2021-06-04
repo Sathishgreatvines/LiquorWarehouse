@@ -4,7 +4,7 @@
 	[VIPSRS] [varchar](5) NULL,
 	[RIGLN] [varchar](13) NULL,
 	[RIDDAT] [numeric](8, 0) NOT NULL,
-	[RIITEM] [varchar](15) NOT NULL,
+	[RIITEM] [varchar](30) NOT NULL,
 	[RITRCD] [varchar](2) NOT NULL,
 	[RIIDAT] [numeric](8, 0) NOT NULL,
 	[RIQTY] [numeric](10, 0) NOT NULL,

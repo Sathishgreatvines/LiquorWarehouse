@@ -17,5 +17,7 @@ CREATE TABLE [SRSIn].[ITMDA](
 	[XGTINR] [numeric](14, 0) NULL,
 	[IXREPACK] [varchar](1) NULL,
 	[IXPARENT] [varchar](8) NULL,
-	[FILENAME] [varchar](100) NOT NULL
+	[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
+
 )

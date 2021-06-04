@@ -2,7 +2,7 @@ CREATE TABLE [SRSIn].[ITM2DA](
     [RECORDTYPE] [varchar](10) NOT NULL,
 	[SUPPID] [varchar](3) NOT NULL,
 	[DISTID] [varchar](15) NULL,
-	[ITEM] [varchar](20) NOT NULL,
+	[ITEM] [varchar](30) NOT NULL,
 	[DESC] [varchar](60) NOT NULL,
 	[CASEGTIN] [numeric](16, 0) NULL,
 	[RETGTIN] [numeric](16, 0) NULL,
