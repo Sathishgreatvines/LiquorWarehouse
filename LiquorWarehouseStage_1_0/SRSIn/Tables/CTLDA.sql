@@ -1,13 +1,14 @@
-﻿CREATE TABLE [SRSIn].[CTLDA](
-	[RECORDTYPE] [varchar](6) NOT NULL,
-	[DISTID] [varchar](8) NOT NULL,
-	[VIPSRS] [varchar](5) NOT NULL,
-	[DISTNM] [varchar](40) NOT NULL,
-	[CTITEM] [varchar](10) NOT NULL,
-	[CTQTY] [numeric](10, 0) NOT NULL,
-	[CTUOM] [varchar](1) NOT NULL,
-	[CTDATE] [varchar](6) NOT NULL,
-	[CTPARENT] [varchar](8) NULL,
-	[CTDISTITEM] [varchar](10) NULL,
-	 [FILENAME] VARCHAR(100) NOT NULL
+CREATE TABLE [SRSIn].[CTLDA] (
+    [RECORDTYPE] VARCHAR (6)   NOT NULL,
+    [DISTID]     VARCHAR (8)   NOT NULL,
+    [VIPSRS]     VARCHAR (5)   NOT NULL,
+    [DISTNM]     VARCHAR (40)  NOT NULL,
+    [CTITEM]     VARCHAR (30)  NOT NULL,
+    [CTQTY]      NUMERIC (10)  NOT NULL,
+    [CTUOM]      VARCHAR (1)   NOT NULL,
+    [CTDATE]     VARCHAR (6)   NOT NULL,
+    [CTPARENT]   VARCHAR (8)   NULL,
+    [CTDISTITEM] VARCHAR (10)  NULL,
+    [FILENAME]   VARCHAR (100) NOT NULL,
+    [SEQID]      INT           IDENTITY (1, 1) NOT NULL
 )

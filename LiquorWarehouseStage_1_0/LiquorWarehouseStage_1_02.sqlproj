@@ -140,6 +140,8 @@
     <Folder Include="Temp" />
     <Folder Include="Temp\Tables" />
     <Folder Include="Temp\Stored Procedures" />
+    <Folder Include="SRSDW" />
+    <Folder Include="SRSDW\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -614,6 +616,45 @@
     <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
     <Build Include="ERPIn\Tables\Inventory.sql" />
     <Build Include="SFOut\Tables\gvp__Inventory__c.sql" />
+    <Build Include="SRSIn\Tables\SRSCAL.sql" />
+    <Build Include="SRSIn\Tables\ORDDA.sql" />
+    <Build Include="SRSIn\Tables\INVDA.sql" />
+    <Build Include="SRSIn\Tables\ITMDA.sql" />
+    <Build Include="SRSIn\Tables\DEPLDA.sql" />
+    <Build Include="SRSIn\Tables\CTLSDA.sql" />
+    <Build Include="SRSIn\Tables\DISTDA.sql" />
+    <Build Include="SRSIn\Tables\VOOWNHIER.sql" />
+    <Build Include="SRSIn\Tables\VOOWNDESC.sql" />
+    <Build Include="SRSIn\Tables\VOCHAIN.sql" />
+    <Build Include="SRSIn\Tables\VOCOT.sql" />
+    <Build Include="SRSIn\Tables\VOXREF.sql" />
+    <Build Include="SRSIn\Tables\VIPOUT.sql" />
+    <Build Include="SRSIn\Tables\SLMDA.sql" />
+    <Build Include="SRSIn\Tables\ITM2DA.sql" />
+    <Build Include="SRSIn\Tables\VIPVALUE.sql" />
+    <Build Include="SRSDW\Tables\CTLDA.sql" />
+    <Build Include="SRSDW\Tables\CTLSDA.sql" />
+    <Build Include="SRSDW\Tables\DEPLDA.sql" />
+    <Build Include="SRSDW\Tables\DISTDA.sql" />
+    <Build Include="SRSDW\Tables\INVDA.sql" />
+    <Build Include="SRSDW\Tables\ITM2DA.sql" />
+    <Build Include="SRSDW\Tables\ITMDA.sql" />
+    <Build Include="SRSDW\Tables\NONDA.sql" />
+    <Build Include="SRSDW\Tables\ORDDA.sql" />
+    <Build Include="SRSDW\Tables\OUTDA.sql" />
+    <Build Include="SRSDW\Tables\SLMDA.sql" />
+    <Build Include="SRSDW\Tables\SLSDA.sql" />
+    <Build Include="SRSDW\Tables\SRSCAL.sql" />
+    <Build Include="SRSDW\Tables\SRSCHAIN.sql" />
+    <Build Include="SRSDW\Tables\SRSVALUE.sql" />
+    <Build Include="SRSDW\Tables\VIPOUT.sql" />
+    <Build Include="SRSDW\Tables\VIPVALUE.sql" />
+    <Build Include="SRSDW\Tables\VOCHAIN.sql" />
+    <Build Include="SRSDW\Tables\VOCOT.sql" />
+    <Build Include="SRSDW\Tables\VOOWNDESC.sql" />
+    <Build Include="SRSDW\Tables\VOOWNHIER.sql" />
+    <Build Include="SRSDW\Tables\VOXREF.sql" />
+    <Build Include="Security\SRSDW.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -639,5 +680,6 @@
     <None Include="Vineyard29LiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="WGUSALiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="WesternSpirits_LiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
