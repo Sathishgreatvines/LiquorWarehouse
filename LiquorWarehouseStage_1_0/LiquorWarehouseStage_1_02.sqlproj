@@ -638,5 +638,6 @@
     <None Include="TrialMasterLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="Vineyard29LiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="WGUSALiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
