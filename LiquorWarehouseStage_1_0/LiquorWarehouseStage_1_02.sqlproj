@@ -614,6 +614,8 @@
     <Build Include="Temp\Tables\GVWRADFact.sql" />
     <Build Include="SFOut\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
+    <Build Include="ERPIn\Tables\Inventory.sql" />
+    <Build Include="SFOut\Tables\gvp__Inventory__c.sql" />
     <Build Include="SRSIn\Tables\SRSCAL.sql" />
     <Build Include="SRSIn\Tables\ORDDA.sql" />
     <Build Include="SRSIn\Tables\INVDA.sql" />
@@ -677,6 +679,7 @@
     <None Include="TrialMasterLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="Vineyard29LiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="WGUSALiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="WesternSpirits_LiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
