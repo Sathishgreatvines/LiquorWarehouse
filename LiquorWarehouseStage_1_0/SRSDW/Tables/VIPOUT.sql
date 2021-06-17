@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SRSDW].[VIPOUT]
 (
 	RECORDTYPE [varchar](6) NOT NULL,
-	DISTID [varchar](8)NULL,
+	DISTID [varchar](14)NULL,
 	RSCUST [varchar](25)NULL,
 	VPID# Numeric(10) NOT NULL,
 	VPDBA [varchar](35) NOT NULL,

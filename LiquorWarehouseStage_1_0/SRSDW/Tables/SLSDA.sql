@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SRSDW].[SLSDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
-	[DISTID] [varchar](8) NOT NULL,
+	[DISTID] [varchar](14) NOT NULL,
 	[VIPSRS] [varchar](5) NULL,
 	[RSIDAT] [varchar](8) NOT NULL,
 	[RSINV] [varchar](25) NOT NULL,

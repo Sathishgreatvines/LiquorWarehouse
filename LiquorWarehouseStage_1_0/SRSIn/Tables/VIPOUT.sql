@@ -1,6 +1,6 @@
 CREATE TABLE [SRSIn].[VIPOUT] (
     [RECORDTYPE] VARCHAR (6)     NOT NULL,
-    [DISTID]     VARCHAR (8)     NULL,
+    [DISTID]     VARCHAR (14)     NULL,
     [RSCUST]     VARCHAR (25)    NULL,
     [VPID#]      NUMERIC (10)    NOT NULL,
     [VPDBA]      NVARCHAR (35)    NOT NULL,

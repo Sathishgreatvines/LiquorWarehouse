@@ -1,7 +1,7 @@
 ﻿CREATE TABLE SRSIn.[DISTDA]
 (
 	RECORDTYPE [varchar](6) NOT NULL,
-	DSSUPP     [varchar](10) NOT NULL,
+	DSSUPP     [varchar](14) NOT NULL,
 	DSDIST     [varchar](10) NOT NULL,
 	DSNAME     NVARCHAR(40) NOT NULL,
 	DSSTR      NVARCHAR(25) NOT NULL,

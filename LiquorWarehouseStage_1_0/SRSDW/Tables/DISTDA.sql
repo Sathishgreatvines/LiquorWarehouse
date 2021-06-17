@@ -2,7 +2,7 @@
 (
 	RECORDTYPE [varchar](6) NOT NULL,
 	DSSUPP     [varchar](10) NOT NULL,
-	DSDIST     [varchar](10) NOT NULL,
+	DSDIST     [varchar](14) NOT NULL,
 	DSNAME     [varchar](40) NOT NULL,
 	DSSTR      [varchar](25) NOT NULL,
 	DSCITY     [varchar](15) NOT NULL,
