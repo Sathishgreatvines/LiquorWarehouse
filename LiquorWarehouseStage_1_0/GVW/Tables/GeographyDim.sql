@@ -10,7 +10,7 @@
 	[ModifiedDate]       				char(10) NULL,
 	[CompanyExternalID]	        				varchar(50) NULL,
 	[CompanyName]	       				varchar(50) NULL,
-	[DivisionExternalID] 		      			varchar(50) NULL,
+	[DivisionExternalID] 		      			varchar(255) NULL,
 	[DivisionName] 		      		varchar(50) NULL,
 	[RegionExternalID] 			        		varchar(50) NULL,
 	[RegionName] 					      varchar(50) NULL,
