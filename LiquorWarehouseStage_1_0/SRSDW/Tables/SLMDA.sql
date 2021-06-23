@@ -2,7 +2,7 @@
 (
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMSUPP] [varchar](10) NOT NULL,
-	[SMDIST] [varchar](8) NOT NULL,
+	[SMDIST] [varchar](14) NOT NULL,
 	[SMCODE] [varchar](5) NOT NULL,
 	[SMNAME] [varchar](35) NOT NULL,
 	[SML1] [varchar](5) NULL,

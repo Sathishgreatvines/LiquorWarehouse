@@ -1,7 +1,7 @@
 CREATE TABLE [SRSIn].[ITMDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SUPPID] [varchar](10) NOT NULL,
-	[DISTID] [varchar](8) NOT NULL,
+	[DISTID] [varchar](14) NOT NULL,
 	[DISTGLN] [numeric](13, 0) NULL,
 	[INSITEM] [varchar](10) NULL,
 	[INDITEM] [varchar](10) NOT NULL,
