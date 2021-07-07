@@ -655,6 +655,7 @@
     <Build Include="SRSDW\Tables\VOOWNHIER.sql" />
     <Build Include="SRSDW\Tables\VOXREF.sql" />
     <Build Include="Security\SRSDW.sql" />
+    <Build Include="Temp\Tables\SRSDWOUTDA.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -681,5 +682,11 @@
     <None Include="RNDCLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="WGUSALiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="WesternSpirits_LiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="EQPATestLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="ProximoLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="SalesDemoLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="SalesLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="LicorBeiraoLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="InspiraWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
