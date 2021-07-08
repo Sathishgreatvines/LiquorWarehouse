@@ -14,7 +14,7 @@
 	[RSNETUOM] [varchar](1) NOT NULL,
 	[RSFMDT] [varchar](8) NOT NULL,
 	[RSTODT] [varchar](8) NOT NULL,
-	[VIPID] [int] NULL,
+	[VIPID] VARCHAR(10) NULL,
 	[RSDITEM] [varchar](10) NULL,
 	[RSNET4] [money] NULL,
 	[RSDEPOS] [money] NULL,
