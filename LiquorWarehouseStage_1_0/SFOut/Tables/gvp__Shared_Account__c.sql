@@ -44,7 +44,9 @@
 	[gvp__PremiseType__c] [varchar](255) NULL,
 	[gvp__Record_Type__c] [varchar](255) NULL,
 	[gvp__Region__c] [varchar](255) NULL,
-	[gvp__Territory__c] [varchar](255) NULL
+	[gvp__Territory__c] [varchar](255) NULL,
+	[gvp__Account_Address_Street__c] varchar(255) NULL,
+    [gvp__External_Id__c] varchar(255) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
