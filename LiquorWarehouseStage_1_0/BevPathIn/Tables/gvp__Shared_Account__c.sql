@@ -33,6 +33,6 @@
     [gvp__Attribute_8__c]                VARCHAR (255) NULL,
     [gvp__Attribute_9__c]                VARCHAR (255) NULL,
     [gvp__Attribute_10__c]               VARCHAR (255) NULL
-);
+)
 GO
 
