@@ -142,6 +142,7 @@
     <Folder Include="Temp\Stored Procedures" />
     <Folder Include="SRSDW" />
     <Folder Include="SRSDW\Tables" />
+    <Folder Include="BevPathIn" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -665,6 +666,9 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Security\BevPathIn.sql" />
+    <Build Include="BevPathIn\gvp__BevPath_Connection__c.sql" />
+    <Build Include="BevPathIn\gvp__Shared_Account__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />

@@ -2,7 +2,6 @@
     [gvp__BevPath_Connection__c]         VARCHAR (255) NULL,
     [gvp__Labels__c]                     VARCHAR (MAX) NULL,
     [gvp__Account__c]                    VARCHAR (255) NULL,
-    [Fields]                             VARCHAR (255) NULL,
     [gvp__External_ID_Ref__c]            VARCHAR (255) NULL,
     [gvp__Account_Name__c]               VARCHAR (255) NULL,
     [gvp__DBA__c]                        VARCHAR (255) NULL,
