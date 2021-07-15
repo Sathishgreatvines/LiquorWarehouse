@@ -719,5 +719,7 @@
     <None Include="SalesLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="LicorBeiraoLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="InspiraWarehouseStage_1_03_04.publish.xml" />
+    <None Include="RNDCDevLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="WGUSAScratchLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
