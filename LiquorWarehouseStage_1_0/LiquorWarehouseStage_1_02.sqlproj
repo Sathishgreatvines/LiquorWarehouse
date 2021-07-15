@@ -144,6 +144,8 @@
     <Folder Include="SRSDW\Tables" />
     <Folder Include="BevPathIn" />
     <Folder Include="SRSXREF" />
+    <Folder Include="BevPathIn\Tables" />
+    <Folder Include="SRSXREF\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -668,14 +670,14 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\BevPathIn.sql" />
-    <Build Include="BevPathIn\gvp__BevPath_Connection__c.sql" />
-    <Build Include="BevPathIn\gvp__Shared_Account__c.sql" />
     <Build Include="Security\SRSXREF.sql" />
-    <Build Include="SRSXREF\AccountXRef.sql" />
     <Build Include="SFOut\Tables\gvp__BevPath_Connection__c.sql" />
     <Build Include="SRSDW\Tables\ProductValidation.sql" />
     <Build Include="SRSDW\Tables\DistributorValidation.sql" />
     <Build Include="GVP\Tables\gvp__BevPath_Connection__c.sql" />
+    <Build Include="BevPathIn\Tables\gvp__BevPath_Connection__c.sql" />
+    <Build Include="BevPathIn\Tables\gvp__Shared_Account__c.sql" />
+    <Build Include="SRSXREF\Tables\AccountXRef.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
