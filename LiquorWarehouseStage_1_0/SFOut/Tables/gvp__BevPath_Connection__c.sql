@@ -12,7 +12,7 @@
     [OwnerId]                      VARCHAR (18)  NULL,
     [gvp__Account_Identifier__c]    VARCHAR (255) NULL,
     [gvp__BevPath_Connection_ID__c] VARCHAR (255) NULL,
-    [gvp__BevPath_Org_ID__c]        VARCHAR (255) NULL,
+    [gvp__BevPath_Org_Id__c]        VARCHAR (255) NULL,
     [gvp__Secret__c]                VARCHAR (255) NULL,
     [gvp__Use_Account_Keys__c]      VARCHAR (70)  NULL
 );

@@ -1,7 +1,7 @@
 CREATE TABLE [SRSIn].[ITMDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SUPPID] [varchar](10) NOT NULL,
-	[DISTID] [varchar](8) NOT NULL,
+	[DISTID] [varchar](14) NOT NULL,
 	[DISTGLN] [numeric](13, 0) NULL,
 	[INSITEM] [varchar](10) NULL,
 	[INDITEM] [varchar](10) NOT NULL,
@@ -17,5 +17,7 @@ CREATE TABLE [SRSIn].[ITMDA](
 	[XGTINR] [numeric](14, 0) NULL,
 	[IXREPACK] [varchar](1) NULL,
 	[IXPARENT] [varchar](8) NULL,
-	[FILENAME] [varchar](100) NOT NULL
+	[FILENAME] [varchar](100) NOT NULL,
+	[SEQID] [int] IDENTITY(1,1) NOT NULL
+
 )

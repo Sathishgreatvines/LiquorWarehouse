@@ -8,7 +8,7 @@
     [LastViewedDate]                VARCHAR (255) NULL,
     [LastReferencedDate]            VARCHAR (255) NULL,
     [CreatedById]                 VARCHAR (18)  NULL,
-    [Last_ModifiedById]           VARCHAR (18)  NULL,
+    [LastModifiedById]           VARCHAR (18)  NULL,
     [OwnerId]                      VARCHAR (18)  NULL,
     [gvp__Account_Identifier__c]    VARCHAR (255) NULL,
     [gvp__BevPath_Connection_Id__c] VARCHAR (255) NULL,

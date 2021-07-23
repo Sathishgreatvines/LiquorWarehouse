@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SRSIn].[SLSDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
-	[DISTID] [varchar](8) NOT NULL,
+	[DISTID] [varchar](14) NOT NULL,
 	[VIPSRS] [varchar](5) NULL,
 	[RSIDAT] [varchar](8) NOT NULL,
 	[RSINV] [varchar](25) NOT NULL,
@@ -14,7 +14,7 @@
 	[RSNETUOM] [varchar](1) NOT NULL,
 	[RSFMDT] [varchar](8) NOT NULL,
 	[RSTODT] [varchar](8) NOT NULL,
-	[VIPID] [int] NULL,
+	[VIPID] VARCHAR(10) NULL,
 	[RSDITEM] [varchar](10) NULL,
 	[RSNET4] [money] NULL,
 	[RSDEPOS] [money] NULL,

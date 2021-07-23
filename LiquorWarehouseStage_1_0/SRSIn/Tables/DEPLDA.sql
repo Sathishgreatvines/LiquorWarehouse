@@ -2,7 +2,7 @@
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMDIST] [varchar](14) NOT NULL,
 	[SMACTD] [numeric](6, 0) NOT NULL,
-	[SMSITM] [varchar](15) NULL,
+	[SMSITM] [varchar](30) NULL,
 	[SMDITM] [varchar](10) NOT NULL,
 	[SMBOH] [numeric](10, 0) NOT NULL,
 	[SMRCPT] [numeric](10, 0) NOT NULL,

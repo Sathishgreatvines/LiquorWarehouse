@@ -13,7 +13,7 @@
     [ModifiedDate]                     VARCHAR(10)      NULL,
     [CompanyExternalID]                       NVARCHAR (50)   NULL,
     [CompanyName]                      NVARCHAR (100)  NULL,
-    [DivisionExternalID]                      NVARCHAR (30)   NULL,
+    [DivisionExternalID]                      NVARCHAR (255)   NULL,
     [DivisionName]                     NVARCHAR(100)  NULL,
     [RegionExternalID]                        NVARCHAR (50)   NULL,
     [RegionName]                       NVARCHAR (100)  NULL,

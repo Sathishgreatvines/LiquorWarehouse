@@ -42,7 +42,7 @@
     [gvp__Tax_Class__c]                     VARCHAR (20)     NULL,
     [gvp__UPC_Code__c]                      VARCHAR (30)     NULL,
     [gvp__Units__c]                         DECIMAL(18, 1)              NULL,
-    [gvp__Vintage__c]                       VARCHAR (40)     NULL,
+    [gvp__Vintage__c]                       NVARCHAR (40)     NULL,
     [gvp__BrandLookup__c]                   NVARCHAR (100)    NULL,
     [gvp__Item_Key__c]                      VARCHAR (60)     NOT NULL,
     [gvp__Available__c]                     VARCHAR (10)     NULL,

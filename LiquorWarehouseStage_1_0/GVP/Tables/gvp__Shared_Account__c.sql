@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVP].[gvp__Shared_Account__c](
-	[Id] [char](18) NOT NULL,
-	[IsDeleted] [varchar](10) NOT NULL,
+	[Id] [char](18) NULL,
+	[IsDeleted] [varchar](10) NULL,
 	[Name] [varchar](255) NULL,
 	[CreatedById] [varchar](255) NULL,
 	[LastModifiedById] [varchar](255) NULL,
@@ -10,7 +10,7 @@
 	[gvp__External_Id__c] [varchar](255) NULL,
 	[gvp__Account_Key__c] [varchar](255) NULL,
 	[gvp__Account_Key_List__c] [varchar](max) NULL,
-	[gvp__Account_Name__c] [varchar](255) NULL,
+	[gvp__Account_Name__c] NVARCHAR(255) NULL,
 	[gvp__Account_Segment__c] [varchar](255) NULL,
 	[gvp__Classification__c] [varchar](255) NULL,
 	[gvp__Attribute_1__c] [varchar](255) NULL,
