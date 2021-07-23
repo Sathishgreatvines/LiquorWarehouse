@@ -656,6 +656,7 @@
     <Build Include="SRSDW\Tables\VOXREF.sql" />
     <Build Include="Security\SRSDW.sql" />
     <Build Include="Temp\Tables\SRSDWOUTDA.sql" />
+    <Build Include="Temp\Tables\GVWShipmentFact.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
