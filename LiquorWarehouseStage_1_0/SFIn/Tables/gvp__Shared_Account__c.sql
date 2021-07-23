@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [SFIn].[gvp__Shared_Account__c](
-	[id] [char](18) NOT NULL,
+	[Id] [char](18) NOT NULL,
 	[IsDeleted] [varchar](10) NOT NULL,
 	[Name] [varchar](255) NULL,
 	[CreatedById] [varchar](255) NULL,
