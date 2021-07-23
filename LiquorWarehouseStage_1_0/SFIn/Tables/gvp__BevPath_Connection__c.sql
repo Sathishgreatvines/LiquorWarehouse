@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFIn].[gvp__BevPath_Connection__c] (
     [Id]                            CHAR (18)     NOT NULL,
     [IsDeleted]                      VARCHAR (10)  NOT NULL,
-    [NAME]                          VARCHAR (80)  NULL,
+    [Name]                          VARCHAR (80)  NULL,
     [CreatedDate]                   VARCHAR (255) NULL,
     [LastModifiedDate]              VARCHAR (255) NULL,
     [SystemModstamp]                VARCHAR (255) NULL,
