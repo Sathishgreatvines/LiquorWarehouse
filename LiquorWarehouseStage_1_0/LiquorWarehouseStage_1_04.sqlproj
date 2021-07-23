@@ -142,14 +142,10 @@
     <Folder Include="Temp\Stored Procedures" />
     <Folder Include="BevPathIn" />
     <Folder Include="BevPathIn\Tables" />
-    <Folder Include="SRSXREF" />
+	<Folder Include="SRSXREF" />
     <Folder Include="SRSXREF\Tables" />
-    <Folder Include="SRSDW" />
+	<Folder Include="SRSDW" />
     <Folder Include="SRSDW\Tables" />
-    <Folder Include="BevPathIn" />
-    <Folder Include="SRSXREF" />
-    <Folder Include="BevPathIn\Tables" />
-    <Folder Include="SRSXREF\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -664,11 +660,15 @@
     <Build Include="SRSDW\Tables\VOXREF.sql" />
     <Build Include="Security\SRSDW.sql" />
     <Build Include="Temp\Tables\SRSDWOUTDA.sql" />
-    <Build Include="Temp\Tables\GVWShipmentFact.sql" />
-    <Build Include="BevPathIn\Tables\gvp__BevPath_Connection__c.sql">
+    <Build Include="BevPathIn\Tables\Tables\gvp__Shared_Account__c.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+	<Build Include="BevPathIn\Tables\gvp__BevPath_Connection__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+
     <Build Include="SFOut\Tables\gvp__Shared_Account__c.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -683,22 +683,6 @@
     </Build>
     <Build Include="SRSDW\Tables\ProductValidation.sql" />
     <Build Include="SRSXREF\Tables\AccountXRef.sql" />
-    <Build Include="BevPathIn\Tables\gvp__Shared_Account__c.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="SFOut\Tables\gvp__BevPath_Connection__c.sql" />
-    <Build Include="SFIn\Tables\gvp__BevPath_Connection__c.sql" />
-    <Build Include="Security\BevPathIn.sql" />
-    <Build Include="Security\SRSXREF.sql" />
-    <Build Include="SFOut\Tables\gvp__BevPath_Connection__c.sql" />
-    <Build Include="SRSDW\Tables\ProductValidation.sql" />
-    <Build Include="SRSDW\Tables\DistributorValidation.sql" />
-    <Build Include="GVP\Tables\gvp__BevPath_Connection__c.sql" />
-    <Build Include="BevPathIn\Tables\gvp__BevPath_Connection__c.sql" />
-    <Build Include="BevPathIn\Tables\gvp__Shared_Account__c.sql" />
-    <Build Include="SRSXREF\Tables\AccountXRef.sql" />
-    <Build Include="SFIn\Tables\gvp__BevPath_Connection__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -731,7 +715,5 @@
     <None Include="SalesLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="LicorBeiraoLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="InspiraWarehouseStage_1_03_04.publish.xml" />
-    <None Include="RNDCDevLiquorWarehouseStage_1_03_04.publish.xml" />
-    <None Include="WGUSAScratchLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
