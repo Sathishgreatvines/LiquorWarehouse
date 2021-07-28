@@ -111,3 +111,6 @@ GVWDeleted                       BIT NULL DEFAULT '0'
 CONSTRAINT [PK_SpendFact] PRIMARY KEY ([ID]), 
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );
+GO
+
+CREATE INDEX [IX_SpendFact_ID] ON [GVW].[SpendFact] (GVWSourceID, ID)
