@@ -1,0 +1,19 @@
+﻿CREATE TABLE [SRSDW].[RawAccountFact](
+	[OUTDAKey] [varchar](255) NULL,
+	[DISTID] [varchar](25) NULL,
+	[ROCUST] [varchar](15) NULL,
+	[SRSRADVolume] [bigint] NULL,
+	[SRSRADVolumeLast120Days] [bigint] NULL,
+	[GVPRADVolume] [bigint] NULL,
+	[GVPRADVolumeLast120Days] [bigint] NULL,
+	[VOXRefAccounts] [bigint] NULL,
+	[ObjectiveFactMaxYears] [bigint] NULL,
+	[ActivityFactMaxYears] [bigint] NULL,
+	[SurveyFactMaxYears] [bigint] NULL,
+	[ContactDim] [bigint] NULL,
+	[CountAccountTeamDim] [bigint] NULL,
+	[CountAccountSetDim] [bigint] NULL,
+	[IndustryVolume] [varchar](50) NULL,
+	[RawFactHash] [varchar](255) NULL,
+	[DisplayAccount] [varchar](50) NULL
+)
