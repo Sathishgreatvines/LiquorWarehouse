@@ -105,7 +105,7 @@
     [StartDate]                    DATE       NULL,
     [Subtype]            VARCHAR (300)  NULL,
     [TaskAccountCall]           VARCHAR (20)   NULL,
-    [TaskCallType]              VARCHAR (30)   NULL,
+    [TaskCallType]              NVARCHAR(200)   NULL,
     [TaskPriority]               VARCHAR (50)   NULL,
     [TaskSubject]                NVARCHAR (250)  NULL,
     [Type]               VARCHAR (50)   NULL,
