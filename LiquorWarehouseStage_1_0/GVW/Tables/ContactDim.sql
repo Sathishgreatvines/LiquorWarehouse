@@ -13,7 +13,7 @@
 	[FirstName] [varchar](75) NULL,
 	[Salutation] [varchar](50) NULL,
 	[RecordType] [varchar](50) NULL,
-	[Street] [varchar](200) NULL,
+	[Street] NVARCHAR(300) NULL,
 	[City] [varchar](100) NULL,
 	[State] [varchar](50) NULL,
 	[Zip] [varchar](50) NULL,
