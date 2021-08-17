@@ -63,5 +63,7 @@
     [Custom_8] NVARCHAR(255) NULL, 
     [CustomerPriority] VARCHAR(100) NULL,
     [Beer_Volume] VARCHAR(100) NULL, 
+    [BDN_Id] VARCHAR(100) NULL, 
+    [gvp__Custom_6__c] NVARCHAR(255) NULL, 
     CONSTRAINT [PK_Retailer] PRIMARY KEY (Retailer_Key)
 	)
