@@ -175,9 +175,13 @@
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 
-
-GO
-
+go
 
 CREATE NONCLUSTERED INDEX [IX_Account_IsDeleted_with_Account_Key] ON [GVP].[Account] ([IsDeleted])
 INCLUDE ([gvp__Account_Key__c])
+
+go
+
+CREATE NONCLUSTERED INDEX [IX_Account_AccountKey_with_Address]
+ON [GVP].[Account] ([gvp__Account_Key__c])
+INCLUDE ([Name],[BillingStreet],[BillingCity],[BillingState],[gvp__Active__c],[gvp__BDN_Trade_Channel__c])

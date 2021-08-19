@@ -65,4 +65,7 @@
     <Build Include="ERPIn\Tables\Retailer.sql" />
     <Build Include="Security\ERPIn.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="WgrantsgpLiquorWarehouseStage_1_03_04.publish.xml" />
+  </ItemGroup>
 </Project>
