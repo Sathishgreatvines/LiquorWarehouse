@@ -740,5 +740,6 @@
     <None Include="WGUSAScratchLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="OpiciLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="OpiciSandboxLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="RNDCTestLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>

@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="public\Functions\deleteclientdata.sql" />
+    <Build Include="GDOut\Tables\TableSetup3013.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="GDOut\Tables\TableSetupv350.sql" />
