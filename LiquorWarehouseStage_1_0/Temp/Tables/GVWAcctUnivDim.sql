@@ -146,6 +146,20 @@ CREATE TABLE Temp.GVWAcctUnivDim (
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
+	[BevPathClassification] [varchar](255) NULL,
+	[BevPathConnectionName] [varchar](255) NULL,
+	[BevPathAttribute1] [varchar](255) NULL,
+	[BevPathAttribute2] [varchar](255) NULL,
+	[BevPathAttribute3] [varchar](255) NULL,
+	[BevPathAttribute4] [varchar](255) NULL,
+	[BevPathAttribute5] [varchar](255) NULL,
+	[BevPathAttribute6] [varchar](255) NULL,
+	[BevPathAttribute7] [varchar](255) NULL,
+	[BevPathAttribute8] [varchar](255) NULL,
+	[BevPathAttribute9] [varchar](255) NULL,
+	[BevPathAttribute10] [varchar](255) NULL,
+	[BevPathAccountSegment] [varchar](255) NULL,
+	[BevPathName] [varchar](255) NULL,
     [GVWHash] VARCHAR(32) NULL
 	CONSTRAINT [PK_GVWAcctUnivDim] PRIMARY KEY (ID)
 );

@@ -38,7 +38,8 @@
 	[gvp__PremiseType__c] [varchar](255) NULL,
 	[gvp__Region__c] [varchar](255) NULL,
 	[gvp__Account_Status__c] [varchar](255) NULL,
-	[gvp__Territory__c] [varchar](255) NULL
+	[gvp__Territory__c] [varchar](255) NULL,
+	[DateAdded] datetime DEFAULT GetDate()
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
