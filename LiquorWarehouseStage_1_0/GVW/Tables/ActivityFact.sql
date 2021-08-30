@@ -72,7 +72,7 @@
     [IncentiveResults]           VARCHAR (700)  NULL,
     [Latitude]             NVARCHAR (40)  NULL,
     [Longitude]            NVARCHAR (40)  NULL,
-    [MenuDrinkName]             VARCHAR (100)  NULL,
+    [MenuDrinkName]             VARCHAR (255)  NULL,
     [ModifiedDate]                 CHAR(10)       NULL,
     [Notes]              NVARCHAR(255)  NULL,
     [ObjectiveResults]           VARCHAR (300)  NULL,
