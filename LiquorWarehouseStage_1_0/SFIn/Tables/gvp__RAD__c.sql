@@ -18,7 +18,7 @@
 	gvp__Distributor__c char(18) NOT null,
 	gvp__Item__c char(18) NOT null,
 	gvp__Label__c nvarchar(100) null,
-	gvp__Physical_Cases__c DECIMAL(16, 2) NOT null DEFAULT 0,
+	gvp__Physical_Cases__c DECIMAL(14,4) NOT null DEFAULT 0,
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
