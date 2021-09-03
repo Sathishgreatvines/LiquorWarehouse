@@ -704,6 +704,7 @@
     <Build Include="SRSDW\Tables\RawAccount.sql" />
     <Build Include="SRSDW\Tables\RawAccountDim.sql" />
     <Build Include="SRSDW\Tables\RawAccountFact.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Shared_Account__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -742,5 +743,6 @@
     <None Include="OpiciSandboxLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="RNDCTestLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="CampariAmericaLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="JaegermeisterUKWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>

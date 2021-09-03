@@ -185,3 +185,9 @@ go
 CREATE NONCLUSTERED INDEX [IX_Account_AccountKey_with_Address]
 ON [GVP].[Account] ([gvp__Account_Key__c])
 INCLUDE ([Name],[BillingStreet],[BillingCity],[BillingState],[gvp__Active__c],[gvp__BDN_Trade_Channel__c])
+
+go
+
+CREATE NONCLUSTERED INDEX [IX_Account_RecordTypeId_with_Name]
+ON [GVP].[Account] ([RecordTypeId])
+INCLUDE ([Name])

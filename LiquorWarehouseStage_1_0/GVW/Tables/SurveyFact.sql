@@ -23,6 +23,7 @@
 	[AnswerCustomText5]       NVARCHAR(255)  NULL,
 	[AnsweredIndicator]               [varchar](50)   NULL,
 	[AnswerExternalID]                 [varchar](200)  NULL,
+	[AnswerFormula]				NVARCHAR(280) null,
 	[AnswerID]                  VARCHAR(18)   NOT  NULL DEFAULT '-1',
 	[AnswerMatchTargetPoints] [varchar](50)   NULL,
 	[AnswerMostRecent]         [varchar](50)   NULL,
