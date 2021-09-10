@@ -749,5 +749,6 @@
     <None Include="RNDCTestLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="CampariAmericaLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="JaegermeisterUKWarehouseStage_1_03_04.publish.xml" />
+    <None Include="PhelpsLiquorWarehouseStage_1_03_05.publish.xml" />
   </ItemGroup>
 </Project>
