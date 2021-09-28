@@ -12,12 +12,11 @@
     [LastReferencedDate]   DATETIME NULL,
     [gvp__Company__c]      char (18) NULL,
     [gvp__Division_Key__c] NVARCHAR (255) NULL,
-    [gvp__Custom_1__c]     NVARCHAR (200) NULL,
-    [gvp__Custom_2__c]     NVARCHAR (200) NULL,
-    [gvp__Custom_3__c]     NVARCHAR (200) NULL,
-    [gvp__Custom_4__c]     NVARCHAR (200) NULL,
-    [gvp__Custom_5__c]     NVARCHAR (200) NULL,
-    [gvp__Is_Active__c]    VARCHAR (10) NULL, 
+    [gvp__Custom_2__c]     NVARCHAR (255) NULL,
+    [gvp__Custom_3__c]     NVARCHAR (255) NULL,
+    [gvp__Custom_4__c]     NVARCHAR (255) NULL,
+    [gvp__Custom_5__c]     NVARCHAR (255) NULL,
+    [gvp__Is_Active__c]    VARCHAR (255) NULL, 
+    [gvp__Custom_1__c]     NVARCHAR (255) NULL,
     CONSTRAINT [PK_gvp__Division__c] PRIMARY KEY ([Id])
 );
-

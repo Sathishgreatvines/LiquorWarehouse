@@ -1,6 +1,6 @@
 ﻿CREATE TABLE Temp.GVPgvp__Account_Call__c
 (
-	[Id] char(18) NOT NULL ,
+    [Id] char(18) NOT NULL ,
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	CreatedDate datetime not null,
@@ -18,12 +18,12 @@
 	gvp__Person_Contacted__c char(18) null,
 	gvp__Status__c nvarchar(255),
 	gvp__Type_of_Call__c nvarchar(255) null,
-	gvp__Summary_Email__c nvarchar(10) not null,
+	gvp__Summary_Email__c nvarchar(255) not null,
 	gvp__Email_Summary_Recipient__c nvarchar(255) null,
 	gvp__Email_Summary_Sent_Date__c datetime null,
 	gvp__Number_Of_Related_Records__c decimal(18,0) null,
 	gvp__External_Id__c varchar(75) null,
-	gvp__Distance_m__c decimal(9,1),
+	gvp__Distance_m__c nvarchar(255),
 	gvp__Geolocation__Latitude__s decimal(18,15) null,
 	gvp__Geolocation__Longitude__s decimal(18,15) null,
 	gvp__Custom_1__c nvarchar(255) null,
@@ -35,20 +35,20 @@
 	gvp__Custom_Checkbox_2__c nvarchar(255) null,
 	gvp__Custom_Fact_1__c decimal(16,2) null,
 	gvp__Custom_Fact_2__c decimal(16,2) null,
-	gvp__Description__c nvarchar(2000) null,
+	gvp__Description__c nvarchar(MAX) null,
 	gvp__Custom_Checkbox_3__c nvarchar(255) null,
 	gvp__Priority__c nvarchar(255) null,
 	gvp__Subject__c nvarchar(255) null,
 	gvp__Account_Team__c char(18) null,
-	gvp__Local_Date__c date null,
+	gvp__Local_Date__c nvarchar(255) null,
 	gvp__Event_Status__c nvarchar(255) null,
 	gvp__Sales_Team_Division__c char(18) null,
-	gvp__Date_Formula__c decimal(8,2) null,
+	gvp__Date_Formula__c nvarchar(255) null,
   gvp__Program__c char(18) null,
 	gvp__Sales_Sequence_End_Date_Time__c datetime null,
 	gvp__Sales_Sequence_Start_Date_Time__c datetime null, 
-    [gvp__Visit_Sequence_Duration_in_Minutes__c] DECIMAL(8, 2) NULL, 
+    [gvp__Visit_Sequence_Duration_in_Minutes__c] nvarchar(255) NULL, 
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
-    CONSTRAINT [PK_GVPgvp__Account_Call__c] PRIMARY KEY ([Id])
+    CONSTRAINT [PK_gvp__Account_Call__c] PRIMARY KEY ([Id])
 
 )

@@ -33,14 +33,13 @@
 	gvp__Depletion_Key__c varchar(255) null,
 	gvp__Month__c INT null,
 	gvp__Year__c varchar(4) null,
-	gvp__Source_File__c varchar(80) null,
-	gvp__Custom_1__c nvarchar(200) null,
-	gvp__Custom_2__c nvarchar(200) null,
+	gvp__Source_File__c varchar(255) null,
+	gvp__Custom_2__c nvarchar(255) null,
+	gvp__Custom_1__c nvarchar(255) null,
 	gvp__Custom_Fact_1__c decimal(18,4) null,
 	gvp__Custom_Fact_2__c decimal(18,4) null,
 	gvp__Distributor_Item_Number__c varchar(255) null,
-	gvp__Source_System__c nvarchar(100) null
-    CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]), 
+	gvp__Source_System__c nvarchar(255) null,
     [gvp__Breakage__c] DECIMAL(18, 4) NULL, 
     [gvp__Military_Off__c] DECIMAL(18, 4) NULL, 
     [gvp__Military_On__c] DECIMAL(18, 4) NULL, 
@@ -51,5 +50,6 @@
     [gvp__Total_Off_Premise__c] DECIMAL(18, 4) NULL, 
     [gvp__Total_On_Premise__c] DECIMAL(18, 4) NULL, 
     [gvp__Transportation__c] DECIMAL(18, 4) NULL, 
-    [gvp__Unclassified_Sales__c] DECIMAL(18, 4) NULL 
+    [gvp__Unclassified_Sales__c] DECIMAL(18, 4) NULL,
+	CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id])
 )
