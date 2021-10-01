@@ -68,10 +68,10 @@
     <None Include="GDOut\Tables\Redshift Schema.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="public\Functions\deleteclientdata.sql" />
-    <Build Include="GDOut\Tables\TableSetup3013.sql" />
+    <None Include="public\Functions\deleteclientdata.sql" />
+    <None Include="GDOut\Tables\TableSetup3013.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="GDOut\Tables\TableSetupv350.sql" />
+    <None Include="GDOut\Tables\TableSetupv350.sql" />
   </ItemGroup>
 </Project>

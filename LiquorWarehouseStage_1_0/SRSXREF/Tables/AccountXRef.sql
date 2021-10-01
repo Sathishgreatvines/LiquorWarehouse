@@ -23,3 +23,12 @@
 	[VIPStatus] [varchar](1) NULL,
 	[SRSDWHASH] [varchar](255) NULL
 ) ON [PRIMARY]
+GO
+
+CREATE INDEX [IX_AccountXRef_RSCUST_State_Name] ON [SRSXREF].[AccountXRef] (RSCust, RawState)
+INCLUDE (AccountName, AccountKey, DISTID)
+GO
+CREATE NONCLUSTERED INDEX [IX_AccountXRef_Rawstate]
+ON [SRSXREF].[AccountXRef] ([RawState])
+INCLUDE ([DistIDRSCust],[RSCustState],[DISTID],[RSCUST],[SFID],[AccountKey],[AccountName],[RawName],[BillingCity],[RawCity],[BillingStreet],[RawStreet],[AccountCOT],[RawClassofTrade],[VOXREFState],[BillingState],[DistributorName],[DistributorState],[AccountStatus],[RawStatus],[VIPStatus],[SRSDWHASH])
+GO
