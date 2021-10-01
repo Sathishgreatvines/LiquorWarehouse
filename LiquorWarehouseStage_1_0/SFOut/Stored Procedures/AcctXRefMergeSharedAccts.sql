@@ -1,10 +1,14 @@
-﻿CREATE PROCEDURE [SFOut].[AcctXRefMergeSharedAccts]
-	@SrcSchema varchar(20) = 'BevPathIn',
-	@ConnectionId varchar(255) = 'gvp__BevPath_Connection_ID__c'
-AS
-	IF OBJECT_ID('tempdb..#TempXREF') IS NOT NULL DROP TABLE #TempXREF;
+﻿CREATE PROCEDURE SFOut.[AcctXRefMergeSharedAccts](
+@SrsSchema   VARCHAR(50),
+@ConnectionId VARCHAR(155) = NULL,
+@WhereClause VARCHAR(255) = ''
+) AS
 
-Select 
+IF OBJECT_ID('tempdb..#TempXREF') IS NOT NULL DROP TABLE #TempXREF;
+
+BEGIN
+            DECLARE @SQL NVARCHAR(MAX) = N'
+            Select 
  distinct RSCUST, RawState, AccountName, AccountKey, SFID  
 into #TempXREF
 from SRSXREF.AccountXRef ax
@@ -47,12 +51,28 @@ WITH groups AS (
       ,[gvp__Region__c]
       ,[gvp__Territory__c]
 	   ,ROW_NUMBER() OVER (Partition by gsa.gvp__External_Id__c order by gsa.gvp__Account_Status__c asc) as RowNumber
-  FROM QUOTENAME([@SrcSchema]).[gvp__Shared_Account__c] gsa
+  FROM ' +  @SrsSchema + '.[gvp__Shared_Account__c] gsa
   left join #TempXREF an on (an.RSCUST = gsa.gvp__Received_Account_Identifier__c and an.RawState = gsa.gvp__Account_Address_State__c and an.AccountName = gsa.gvp__Account_Name__c)
   left join #TempXREF ax on (ax.RSCUST = gsa.gvp__Received_Account_Identifier__c and ax.RawState = gsa.gvp__Account_Address_State__c)
   left join #TempXREF ay on (ay.AccountKey = gsa.gvp__Received_Account_Identifier__c and ay.RawState = gsa.gvp__Account_Address_State__c)
   left join #TempXREF ak on (ak.RSCUST = gsa.gvp__Received_Account_Identifier__c)
-  left join gvp.gvp__BevPath_Connection__c bp on bp.[@ConnectionId] = gsa.gvp__BevPath_Connection__c 
+  left join gvp.gvp__BevPath_Connection__c bp on bp.' + @ConnectionId + ' = gsa.gvp__BevPath_Connection__c '
+  + @WhereClause + '
 )
 select * from groups
-  where ROWNUMBER = 1
+  where ROWNUMBER = 1'
+
+        DECLARE @params NVARCHAR(MAX) = N'
+            @SrsSchema   VARCHAR(50),
+            @ConnectionId VARCHAR(155),
+			@WhereClause VARCHAR(255)';
+
+        PRINT @SQL
+
+        EXEC sys.sp_executesql @SQL, @params,
+            @SrsSchema,
+            @ConnectionId,
+			@WhereClause
+END
+
+RETURN 0
