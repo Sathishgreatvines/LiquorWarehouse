@@ -150,6 +150,7 @@
     <Folder Include="SRSXREF" />
     <Folder Include="BevPathIn\Tables" />
     <Folder Include="SRSXREF\Tables" />
+    <Folder Include="GVW\Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -710,6 +711,8 @@
     <Build Include="GVP\Tables\ComboPacks.sql" />
     <Build Include="SFOut\Tables\AccountShare.sql" />
     <Build Include="SFOut\Tables\gvp__Invoice__c.sql" />
+    <Build Include="GVW\Stored Procedure\UpdateAcctFromSharedAccounts.sql" />
+    <Build Include="SFOut\Stored Procedures\AcctXRefMergeSharedAccts.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -750,5 +753,6 @@
     <None Include="CampariAmericaLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="JaegermeisterUKWarehouseStage_1_03_04.publish.xml" />
     <None Include="PhelpsLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="aaHeidiLiquorWarehouseStage_1_03_05.publish.xml" />
   </ItemGroup>
 </Project>
