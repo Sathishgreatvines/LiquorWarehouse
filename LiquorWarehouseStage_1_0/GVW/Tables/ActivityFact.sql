@@ -18,7 +18,7 @@
     [ContactDimID]              VARCHAR (20)   NULL DEFAULT '-1',
     [ContactedName]     NVARCHAR (100)   NULL,
     [ContactedEmail]    NVARCHAR (100)  NULL,
-    [ContactedTitle]    NVARCHAR (100)   NULL,
+    [ContactedTitle]    NVARCHAR (255)   NULL,
     [CreatedDate]                  CHAR(10)       NULL,
     [CreateDate]                   DATE       NULL,
     [CreateDateID]                VARCHAR (20)   NULL,

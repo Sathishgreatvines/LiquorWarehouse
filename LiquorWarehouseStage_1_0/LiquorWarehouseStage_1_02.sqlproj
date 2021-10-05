@@ -754,5 +754,6 @@
     <None Include="JaegermeisterUKWarehouseStage_1_03_04.publish.xml" />
     <None Include="PhelpsLiquorWarehouseStage_1_03_05.publish.xml" />
     <None Include="aaHeidiLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="WgrantsgpLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>
