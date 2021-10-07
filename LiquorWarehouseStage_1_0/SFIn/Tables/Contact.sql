@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [SFIn].[Contact] (
-    [Id]                               varchar (18)     NOT NULL,
+    [Id]                               VARCHAR(18)     NOT NULL,
     [IsDeleted]                        VARCHAR (10)     NOT NULL,
     [MasterRecordId]                   char (18)     NULL,
     [AccountId]                        char (18)     NULL,
@@ -94,4 +94,3 @@
     [gvp__Active__c]                   VARCHAR (10)     NULL,
     CONSTRAINT [PK_Contact] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-
