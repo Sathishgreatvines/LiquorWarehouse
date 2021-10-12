@@ -22,7 +22,7 @@ WITH groups AS (
       ,gsa.[gvp__External_Id__c]
       ,[gvp__Account_Key__c]
       ,[gvp__Account_Key_List__c]
-      ,coalesce(an.AccountName,ax.AccountName,ak.AccountName,ay.AccountName,[gvp__Account_Name__c]) as gvp__Account_Name__c
+      ,coalesce([gvp__Account_Name__c],an.AccountName,ax.AccountName,ak.AccountName,ay.AccountName) as gvp__Account_Name__c
       ,[gvp__Account_Segment__c]
       ,[gvp__Classification__c]
       ,[gvp__Attribute_1__c]
