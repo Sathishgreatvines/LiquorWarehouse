@@ -43,7 +43,7 @@
 	gvp__Sales_Team_Division__c varchar(18) null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 
-	CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (Id,IsDeleted,gvp__RAD_Key__c,LastModifiedDate)
+	CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (Id,IsDeleted,gvp__RAD_Key__c)
   --  CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
 )
 
