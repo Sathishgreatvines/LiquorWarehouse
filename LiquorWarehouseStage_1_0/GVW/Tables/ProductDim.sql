@@ -63,7 +63,7 @@
 	[ItemQuantity]   varchar(20) NULL,
 	[ItemRecordType] varchar(100) NULL,
 	[ItemSecondaryEquivalent] varchar(20) NULL,
-	[ItemTaxClass]				nvarchar (24) NULL,
+	[ItemTaxClass]				nvarchar (30) NULL,
 	[ItemUnitPrice] [varchar](20) NULL,
 	[ItemUnits] [varchar](20) NULL,
 	[ItemUOM] [nvarchar](30) NULL,
