@@ -1,4 +1,14 @@
-﻿CREATE PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
+﻿
+GO
+
+/****** Object:  StoredProcedure [dbo].[PopulateFiscalDateTable]    Script Date: 10/13/2021 2:54:57 PM ******/
+SET ANSI_NULLS OFF
+GO
+
+SET QUOTED_IDENTIFIER OFF
+GO
+
+CREATE PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
 as
 begin
   -- Convert parameters to dates
@@ -47,3 +57,6 @@ begin
     where CD.CalendarDate between @startdate and @enddate
     order by FiscalDate
 end
+GO
+
+
