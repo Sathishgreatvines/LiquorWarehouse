@@ -12,7 +12,8 @@ BEGIN
  distinct RSCUST, RawState, AccountName, AccountKey, SFID  
 into #TempXREF
 from SRSXREF.AccountXRef ax
-where ax.RawState in (select distinct gvp__Account_Address_State__c from BevPathIn.gvp__Shared_Account__c);
+where ax.RawState in (select distinct gvp__Account_Address_State__c from BevPathIn.gvp__Shared_Account__c)
+   or ax.RawState in (select distinct gvp__Account_Address_State__c from GVP.gvp__Shared_Account__c);
 
 WITH groups AS (
  SELECT distinct
