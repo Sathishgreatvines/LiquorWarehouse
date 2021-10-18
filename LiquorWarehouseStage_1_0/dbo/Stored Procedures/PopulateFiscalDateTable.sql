@@ -1,18 +1,5 @@
 ﻿
-GO
-
-/****** Object:  StoredProcedure [dbo].[PopulateFiscalDateTable]    Script Date: 10/14/2021 5:39:21 AM ******/
-SET ANSI_NULLS OFF
-GO
-
-SET QUOTED_IDENTIFIER OFF
-GO
-
-
-USE [aaHeidi_LiquorWarehouseStage_1_03_05]
-go
-
-CREATE OR ALTER       PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
+CREATE PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
 as
 begin
   -- Convert parameters to dates
