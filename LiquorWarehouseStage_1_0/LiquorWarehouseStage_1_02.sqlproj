@@ -760,5 +760,7 @@
     <None Include="BackbarLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="LiquorWarehouseStage_1_02.publish.xml" />
     <None Include="VedrenneLiquorWarehouseStage_1_02.publish.publish.xml" />
+    <None Include="LiquorWarehouseStage_1_02_1.publish.xml" />
+    <None Include="SlocumLiquorWarehouseStage_1_02.publish.publish.publish.xml" />
   </ItemGroup>
 </Project>
