@@ -56,11 +56,11 @@ begin
     from Global..CalendarDate CD
 		  inner join Global..CalendarDate FD on dateadd(dd, datediff(DD,@startdate, dateadd(MM, @fiscalmonthadjust, @start)),CD.CalendarDate) = FD.CalendarDate 
 		  
-		  inner join[dbo].[FiscalOffsets]  FOM on CD.MonthNumberOfYEAR = FOM.[Month] 
+		  inner join Global.[dbo].[FiscalOffsets]  FOM on CD.MonthNumberOfYEAR = FOM.[Month] 
 								and FOM.OffsetType = 'MONTHYEAR'
 								and FOM.Offset = @fiscalmonthadjust
 
-		  inner Join [dbo].[FiscalOffsets]  FOQ on  CD.MonthNumberOfYEAR = FOQ.[Month]
+		  inner Join Global.[dbo].[FiscalOffsets]  FOQ on  CD.MonthNumberOfYEAR = FOQ.[Month]
 		         and FOQ.OffsetType = 'QUARTER'
 		         and FOQ.Offset = @fiscalMonthAdjust
 
