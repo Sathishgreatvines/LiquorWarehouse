@@ -56,5 +56,7 @@
 	[SRSDeplDAVolumeSMPeriod] [varchar](30) NULL,
 	[GVPDepletionFact] [varchar](225) NULL,
 	[GVPRADFact120Days] [varchar](225) NULL,
-	[Dis_Hash] [varchar](255) NULL
+	[Dis_Hash] [varchar](255) NULL,
+	[MatchRAD120days] [nvarchar](30) NULL,
+	[MatchDepletions] [nvarchar](30) NULL
 ) 
