@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[AcctTypeDim](
 	[GVWAcctTypeSKey] int identity(1,1),
-	[ID] [varchar](20) NOT NULL,
+	[ID] [varchar](20) NOT NULL DEFAULT '-1',
 	[Name] [varchar](20) NULL, 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,

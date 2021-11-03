@@ -12,7 +12,7 @@
     [FiscalMonth]             CHAR(2)     NULL,
     [FiscalYear]              CHAR(4)     NULL,
     [FiscalDateDimID]         VARCHAR(10)    NULL,
-    [EventFactID]           VARCHAR(18)    NULL DEFAULT '-1',
+    [EventFactID]           VARCHAR(18)    NOT NULL DEFAULT '-1',
     [AccountCallFactID]     VARCHAR(18)    NULL DEFAULT '-1',
     [ContactDimID]          VARCHAR(18)    NULL DEFAULT '-1',
     [ProductDimID]          VARCHAR(18)    NULL DEFAULT '-1',

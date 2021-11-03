@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GVW].[AccountCallFact](
-    [ID]           VARCHAR(18)      NOT NULL,
+    [ID]           VARCHAR(18)      NOT NULL DEFAULT '-1',
 	[URL]          [varchar](250)  NULL,
 	[Name]         [varchar](250)  NULL,
 	[AccountDimID]                 VARCHAR(18)      NOT NULL DEFAULT '-1',

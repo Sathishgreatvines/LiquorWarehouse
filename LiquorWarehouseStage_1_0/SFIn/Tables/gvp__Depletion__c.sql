@@ -18,7 +18,7 @@
 	gvp__Label__c nvarchar(100) null,
 	gvp__Physical_Cases__c decimal(18,4) null,
 	gvp__X9L_Cases__c DECIMAL(18, 4) null,
-	gvp__Goal__c nvarchar(60) null,
+	gvp__Goal__c nvarchar(255) null,
 	gvp__Territory_Goal__c char(18) null,
 	gvp__BDN_Adjustments__c decimal(18,4) null,
 	gvp__BDN_Closing_Balance__c DECIMAL(18, 4) null,
@@ -39,8 +39,7 @@
 	gvp__Custom_Fact_1__c decimal(18,4) null,
 	gvp__Custom_Fact_2__c decimal(18,4) null,
 	gvp__Distributor_Item_Number__c varchar(255) null,
-	gvp__Source_System__c nvarchar(100) null
-    CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]), 
+	gvp__Source_System__c nvarchar(100) null,
     [gvp__Breakage__c] DECIMAL(18, 4) NULL, 
     [gvp__Military_Off__c] DECIMAL(18, 4) NULL, 
     [gvp__Military_On__c] DECIMAL(18, 4) NULL, 
@@ -51,5 +50,6 @@
     [gvp__Total_Off_Premise__c] DECIMAL(18, 4) NULL, 
     [gvp__Total_On_Premise__c] DECIMAL(18, 4) NULL, 
     [gvp__Transportation__c] DECIMAL(18, 4) NULL, 
-    [gvp__Unclassified_Sales__c] DECIMAL(18, 4) NULL 
+    [gvp__Unclassified_Sales__c] DECIMAL(18, 4) NULL, 
+    CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id])
 )
