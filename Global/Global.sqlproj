@@ -178,6 +178,10 @@
     <Build Include="dbo\Stored Procedures\GetSingleParameterValueForAllClients.sql" />
     <Build Include="dbo\Stored Procedures\DeleteClient.sql" />
     <Build Include="dbo\Tables\RecordTypeMapper.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientSRSValidationDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Global.refactorlog" />
