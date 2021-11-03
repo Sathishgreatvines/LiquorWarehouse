@@ -1,5 +1,5 @@
 ﻿CREATE TABLE GVW.AccountCallSequenceFact(									
-    ID           VARCHAR(18)      NOT NULL,                           
+    ID           VARCHAR(18)      NOT NULL DEFAULT '-1',                           
 	Name         varchar(250)  NULL,                                  
 	CreatedDate                   char(10)      NULL,                 
 	ModifiedDate                  char(10)      NULL,                 

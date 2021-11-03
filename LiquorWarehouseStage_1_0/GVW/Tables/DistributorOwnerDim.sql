@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[DistributorOwnerDim] (
 	[GVWDistributorOwnerSKey] int identity(1,1),
-	[ID] VARCHAR(18) NOT NULL,
+	[ID] VARCHAR(18) NOT NULL DEFAULT '-1',
 	[Name] [nvarchar](200) NULL,
 	[Granularity] [nvarchar](50) NULL,
 	[URL] [nvarchar](200) NULL,

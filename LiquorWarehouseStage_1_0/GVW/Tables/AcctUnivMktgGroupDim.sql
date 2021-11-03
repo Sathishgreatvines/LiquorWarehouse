@@ -2,7 +2,7 @@
 	[GVWAcctUnivMktgGroupSKey] int identity(1,1),
 	[CreatedDate] [nvarchar](10) NULL,
 	[ModifiedDate] [nvarchar](10) NULL,
-	[ID] VARCHAR(18) NULL,
+	[ID] VARCHAR(18) NOT NULL DEFAULT '-1',
 	[URL] [nvarchar](100) NULL,
 	[Name] [nvarchar](250) NULL,
 	[NameNumber] [nvarchar](400) NULL,

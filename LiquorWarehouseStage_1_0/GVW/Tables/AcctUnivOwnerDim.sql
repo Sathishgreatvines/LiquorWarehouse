@@ -2,7 +2,7 @@
 	[GVWAcctUnivOwnerSKey] int identity(1,1),
    	[CreatedDate] CHAR(10) NULL,
 	[ModifiedDate] CHAR(10) NULL,
-	[ID] VARCHAR(18) NULL,
+	[ID] VARCHAR(18) NOT NULL DEFAULT '-1',
 	[Name] [nvarchar](200) NULL,
 	[URL] [nvarchar](200) NULL,
 	[Granularity] [nvarchar](30) NULL,
