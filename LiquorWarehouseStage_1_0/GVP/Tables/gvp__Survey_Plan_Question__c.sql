@@ -24,7 +24,7 @@
 	gvp__Placement__c char(18) null,
 	gvp__Question_Key__c NVARCHAR(255) null,
 	gvp__Question_List__c nvarchar(300) null,
-	gvp__Question_Text__c nvarchar(500) null,
+	gvp__Question_Text__c nvarchar(MAX) null,
 	gvp__Related_Competitor__c char(18) null,
 	gvp__Related_Plan_Question__c char(18) null,
 	gvp__Size__c char(18) null,
@@ -43,6 +43,7 @@
 	gvp__Full_Product_Description__c nvarchar(200) null,
 	gvp__Product_Name__c nvarchar(255) null,
 	gvp__Product_Size__c nvarchar(255) null,
+	gvp__Questions_In_Set__c nvarchar(MAX) null,
 	gvp__Questions_In_Set__c nvarchar(500) null,
 	gvp__Required__c varchar(255) null,
 	gvp__Attachments__c decimal(4,1) null,
@@ -79,7 +80,7 @@
 	gvp__Target_Label__c char(18) null,
 	gvp__Target_Product_Set__c char(18) null,
 	gvp__Target_Program__c char(18) null,
-    CurrencyIsoCode varchar(10) null DEFAULT 'USD', 
+  CurrencyIsoCode varchar(10) null DEFAULT 'USD', 
 	gvp__Target_Size__c char(18) null,	
 	gvp__Export__c nvarchar(50)
     CONSTRAINT [PK_gvp__Survey_Plan_Question__c] PRIMARY KEY ([Id]) 

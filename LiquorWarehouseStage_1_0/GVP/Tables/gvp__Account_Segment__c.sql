@@ -11,10 +11,10 @@
 	LastActivityDate date null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Channel__c nvarchar(100) null,
-	gvp__Segment_Code__c nvarchar(100) null,
+	gvp__Channel__c nvarchar(255) null,
+	gvp__Segment_Code__c nvarchar(255) null,
 	gvp__Account_Segment__c char(18) null,
-	gvp__Type__c nvarchar(100) null, 
+	gvp__Type__c nvarchar(255) null, 
     CONSTRAINT [PK_gvp__Account_Segment__c] PRIMARY KEY ([Id])
 
 )

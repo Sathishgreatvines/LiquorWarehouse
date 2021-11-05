@@ -11,7 +11,7 @@
     [LastViewedDate]             DATETIME      NULL,
     [LastReferencedDate]         DATETIME      NULL,
     [gvp__Master_Objective__c]   char (18)  NULL,
-    [gvp__Import_Type__c]        VARCHAR (20)  NULL,
+    [gvp__Import_Type__c]        NVARCHAR (255)  NULL,
     [gvp__Objective__c]          char (18)  NULL,
     [gvp__Accomplish_By_Date__c] DATE          NULL,
     [gvp__Assigned_Date__c]      DATE          NULL,
