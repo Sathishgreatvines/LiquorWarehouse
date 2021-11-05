@@ -53,4 +53,3 @@
     CONSTRAINT [PK_User] PRIMARY KEY ([Id])
 );
 
-

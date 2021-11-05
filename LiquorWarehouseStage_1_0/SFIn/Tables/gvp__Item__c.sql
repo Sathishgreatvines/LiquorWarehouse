@@ -39,7 +39,7 @@
     [gvp__ShipCompliant_Type__c]            NVARCHAR (255)    NULL,
     [gvp__Size__c]                          char (18)     NULL,
     [gvp__Suggested_Retail_Price__c]        decimal(10,2)   NULL,
-    [gvp__Tax_Class__c]                     VARCHAR (24)     NULL,
+    [gvp__Tax_Class__c]                     VARCHAR (30)     NULL,
     [gvp__UPC_Code__c]                      VARCHAR (30)     NULL,
     [gvp__Units__c]                         DECIMAL(19,1)              NULL,
     [gvp__Vintage__c]                       nvarchar(255)     NULL,

@@ -94,4 +94,3 @@
     [gvp__Active__c]                   Nvarchar(255)     NULL,
     CONSTRAINT [PK_Contact] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-

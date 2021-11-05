@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVP].[gvp__Shared_Account__c](
-	[Id] [char](18) NULL,
-	[IsDeleted] [varchar](10) NULL,
+	[Id] [char](18) NOT NULL,
+	[IsDeleted] [varchar](10) NOT NULL,
 	[Name] [varchar](255) NULL,
     [CreatedDate]                       DATETIME         NULL,
     [CreatedById]                       char(18)         NULL,
@@ -10,7 +10,7 @@
 	[gvp__Account__c] [varchar](255) NULL,
 	[gvp__BevPath_Connection__c] [varchar](255) NULL,
 	[gvp__Received_Account_Identifier__c] [varchar](255) NULL,
-	[gvp__External_Id__c] [varchar](255) NULL,
+	[gvp__External_Id__c] [varchar](255) NOT NULL,
 	[gvp__Account_Key__c] [varchar](255) NULL,
 	[gvp__Account_Key_List__c] [varchar](max) NULL,
 	[gvp__Account_Name__c] NVARCHAR(255) NULL,
@@ -42,7 +42,8 @@
 	[gvp__Region__c] [varchar](255) NULL,
 	[gvp__Account_Status__c] [varchar](255) NULL,
 	[gvp__Territory__c] [varchar](255) NULL,
-	[DateAdded] datetime DEFAULT GetDate()
+	[DateAdded] datetime DEFAULT GetDate(), 
+    CONSTRAINT [PK_gvp__Shared_Account__c] PRIMARY KEY ([Id], [IsDeleted])
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 

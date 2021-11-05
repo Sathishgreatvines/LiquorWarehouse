@@ -9,7 +9,7 @@
 	[Description]                             NVARCHAR (500)  NULL,
 	[ReasonForChange]         								VARCHAR (500) NULL,
 	[SharingOption]         									VARCHAR (5) NULL,
-	[PathOnClient]         										VARCHAR (200) NULL,
+	[PathOnClient]         										VARCHAR (255) NULL,
 	[RatingCount]						 									VARCHAR (10) NULL,
 	[IsDeleted]               	              VARCHAR (10) NULL,
   [ContentModifiedDate]                     DATETIME NULL,

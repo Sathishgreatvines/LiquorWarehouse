@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{70645db8-73d3-46ba-bbea-469406910af5}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -174,10 +174,14 @@
     <Build Include="dbo\Stored Procedures\AddEnvironment.sql" />
     <Build Include="dbo\Stored Procedures\CopyClientParametersBetweenEnvironments.sql" />
     <Build Include="dbo\Stored Procedures\GetEnvironmentList.sql" />
-    <Build Include="dbo\Stored Procedures\AlertToSlack.sql" />
+    <PostDeploy Include="dbo\Stored Procedures\AlertToSlack.sql" />
     <Build Include="dbo\Stored Procedures\GetSingleParameterValueForAllClients.sql" />
     <Build Include="dbo\Stored Procedures\DeleteClient.sql" />
     <Build Include="dbo\Tables\RecordTypeMapper.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientSRSValidationDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Global.refactorlog" />

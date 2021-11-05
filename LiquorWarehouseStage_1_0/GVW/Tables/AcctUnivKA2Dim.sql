@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[AcctUnivKA2Dim](
 	[GVWAcctUnivKA2SKey] int identity(1,1),
-	[ID] VARCHAR(18) NOT NULL,
+	[ID] VARCHAR(18) NOT NULL DEFAULT '-1',
 	[CreatedDate] [nvarchar](10) NULL,
 	[ModifiedDate] [nvarchar](10) NULL,
 	[URL] [nvarchar](100) NULL,

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[PersonDim](
 	[GVWPersonSKey] int identity(1,1),
-	[ID] [varchar](50) NULL,
+	[ID] [varchar](50) NOT NULL DEFAULT '-1',
 	[Name] [varchar](50) NULL,
 	[Granularity] [varchar](50) NULL,
 	[URL] [varchar](100) NULL,

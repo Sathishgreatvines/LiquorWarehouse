@@ -37,7 +37,7 @@
     [AssistantName]                    NVARCHAR (50)     NULL,
     [LeadSource]                       NVARCHAR (255)     NULL,
     [Birthdate]                        DATE             NULL,
-    [Description]                      nvarchar(max)   NULL,
+    [Description]                      nvarchar(255)   NULL,
     [OwnerId]                          char (18)     NULL,
     [HasOptedOutOfEmail]               NVARCHAR (255)     NULL,
     [DoNotCall]                        Nvarchar(255)     NULL,
@@ -94,4 +94,3 @@
     [gvp__Active__c]                   Nvarchar(255)     NULL,
     CONSTRAINT [PK_Contact] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-

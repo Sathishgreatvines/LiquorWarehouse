@@ -37,9 +37,9 @@
 	[SRSIEMLPC] [numeric](9, 3) NULL,
 	[OUNCE] [numeric](6, 0) NULL,
 	[IEUVOLD] [varchar](15) NULL,
-	[SRSLiterFromOz] FLOAT NULL,
-	[SRSLiterFromML] FLOAT NULL,
-	[GVPLiterVolume] FLOAT NULL,
+	[SRSLiterFromOz] [float] NULL,
+	[SRSLiterFromML] [float] NULL,
+	[GVPLiterVolume] [float] NULL,
 	[MatchLiterVolume] [varchar](10) NULL,
 	[MatchOZVolume] [varchar](10) NULL,
 	[IEUSIZE] [numeric](11, 3) NULL,
@@ -103,5 +103,3 @@
 	[SRSDeplDAVolumeSMPERIOD] [bigint] NULL
 ) ON [PRIMARY]
 GO
-
-

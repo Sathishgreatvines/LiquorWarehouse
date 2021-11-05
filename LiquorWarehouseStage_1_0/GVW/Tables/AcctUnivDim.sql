@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GVW].[AcctUnivDim] ([GVWAcctUnivSKey] int identity(1,1),
-    [ID]                    VARCHAR(18)  NOT NULL,
+    [ID]                    VARCHAR(18)  NOT NULL DEFAULT '-1',
     [Name]                  NVARCHAR (250)  NULL,
     [Granularity]           VARCHAR (20)   NULL,
     [URL]                   NVARCHAR (100)  NULL,

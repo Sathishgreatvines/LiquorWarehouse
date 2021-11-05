@@ -11,7 +11,7 @@
 	[gvp__Account__c] [varchar](255) NULL,
 	[gvp__BevPath_Connection__c] [varchar](255) NULL,
 	[gvp__Received_Account_Identifier__c] [varchar](255) NULL,
-	[gvp__External_Id__c] [varchar](255) NULL,
+	[gvp__External_Id__c] [varchar](255) NOT NULL,
 	[gvp__Account_Key__c] [varchar](255) NULL,
 	[gvp__Account_Key_List__c] [varchar](max) NULL,
 	[gvp__Account_Name__c] NVARCHAR(255) NULL,

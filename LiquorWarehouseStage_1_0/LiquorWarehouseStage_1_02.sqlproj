@@ -17,7 +17,7 @@
     <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
@@ -84,6 +84,7 @@
     <Recovery>SIMPLE</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -150,6 +151,7 @@
     <Folder Include="SRSXREF" />
     <Folder Include="BevPathIn\Tables" />
     <Folder Include="SRSXREF\Tables" />
+    <Folder Include="GVW\Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -710,6 +712,11 @@
     <Build Include="GVP\Tables\ComboPacks.sql" />
     <Build Include="SFOut\Tables\AccountShare.sql" />
     <Build Include="SFOut\Tables\gvp__Invoice__c.sql" />
+    <Build Include="GVW\Stored Procedure\UpdateAcctFromSharedAccounts.sql" />
+    <Build Include="SFOut\Stored Procedures\AcctXRefMergeSharedAccts.sql" />
+    <Build Include="Temp\Stored Procedures\UpdateSFOutFromTempTables.sql" />
+    <Build Include="SRSDW\Tables\DistributorValidationIssues.sql" />
+    <Build Include="SRSDW\Tables\ProductValidationIssues.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -750,5 +757,14 @@
     <None Include="CampariAmericaLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="JaegermeisterUKWarehouseStage_1_03_04.publish.xml" />
     <None Include="PhelpsLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="aaHeidiLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="WgrantsgpLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="BackbarLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="LiquorWarehouseStage_1_02.publish.xml" />
+    <None Include="VedrenneLiquorWarehouseStage_1_02.publish.publish.xml" />
+    <None Include="PernodRicardCorbyLiquorWarehouseStage_1_03_50.publish.xml" />
+    <None Include="LiquorWarehouseStage_1_02_1.publish.xml" />
+    <None Include="SlocumLiquorWarehouseStage_1_02.publish.publish.publish.xml" />
+    <None Include="AlbertBichotLiquorWarehouseStage_1_03_04.publish.xml" />
   </ItemGroup>
 </Project>

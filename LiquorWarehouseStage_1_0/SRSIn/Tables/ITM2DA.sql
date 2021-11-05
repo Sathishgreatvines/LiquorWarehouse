@@ -49,7 +49,7 @@ CREATE TABLE [SRSIn].[ITM2DA](
 	[IEPKWIDTH] [numeric](5, 2) NULL,
 	[IEPKHEIGHT] [numeric](5, 2) NULL,
 	[IEPKLENGTH] [numeric](5, 2) NULL,
-	[IECSPTIER] varchar(3) NULL,
+	[IECSPTIER] varchar(10) NULL,
 	[IEVINTAGE] varchar(4) NULL,
 	[IESEASONAL] [varchar](1) NULL,
 	[IEMILITARY] [varchar](1) NULL,

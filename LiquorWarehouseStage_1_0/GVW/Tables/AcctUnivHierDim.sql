@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[AcctUnivHierDim] (
 	[GVWAcctUnivHierSKey] int identity(1,1),
-    [ID]     VARCHAR(18)      NOT NULL,
+    [ID]     VARCHAR(18)      NOT NULL DEFAULT '-1',
     [CreatedDate]                 CHAR (10)      NULL,
     [ModifiedDate]                CHAR (10)      NULL,
     [AcctHQ4ID]                 VARCHAR(18)      NULL,
