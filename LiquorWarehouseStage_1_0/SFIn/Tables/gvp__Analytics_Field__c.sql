@@ -10,11 +10,11 @@
 	SystemModstamp datetime null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-    gvp__Analytics_Folder__c VARCHAR(100) NULL, 
-    gvp__Field_Identifier__c VARCHAR(100) NULL, 
-    gvp__Goal_Type__c VARCHAR(100) NULL, 
-    gvp__Object_Id__c VARCHAR(100) NULL, 
+    gvp__Analytics_Folder__c nvarchar(255) NULL, 
+    gvp__Field_Identifier__c nvarchar(255) NULL, 
+    gvp__Goal_Type__c nvarchar(255) NULL, 
+    gvp__Object_Id__c nvarchar(255) NULL, 
     gvp__Quantity_Type__c VARCHAR(100) NULL, 
-    gvp__Type__c VARCHAR(100) NULL, 
-    gvp__Valid_Result_Report_Metric__c VARCHAR(100) NULL
+    gvp__Type__c nvarchar(255) NULL, 
+    gvp__Valid_Result_Report_Metric__c nvarchar(255) NULL
 )

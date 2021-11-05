@@ -12,17 +12,17 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
-	gvp__Custom_1__c nvarchar(200) null,
-	gvp__Custom_2__c nvarchar(200) null,
-	gvp__Custom_3__c nvarchar(200) null,
-	gvp__Custom_4__c nvarchar(200) null,
-	gvp__Custom_5__c nvarchar(200) null,
-	gvp__External_Id__c varchar(100) null,
+	gvp__Custom_1__c nvarchar(255) null,
+	gvp__Custom_2__c nvarchar(255) null,
+	gvp__Custom_3__c nvarchar(255) null,
+	gvp__Custom_4__c nvarchar(255) null,
+	gvp__Custom_5__c nvarchar(255) null,
+	gvp__External_Id__c nvarchar(255) null,
 	gvp__Manager_1__c char(18) null,
 	gvp__Manager_2__c char(18) null,
 	gvp__Manager_3__c char(18) null,
 	gvp__SalesPerson__c char(18) null,
-	gvp__Enable_Sharing__c varchar(10) not null,
+	gvp__Enable_Sharing__c nvarchar(255) not null,
 	gvp__Manager_Contact_1__c char(18) null,
 	gvp__Manager_Contact_2__c char(18) null,
 	gvp__Manager_Contact_3__c char(18) null,
@@ -36,6 +36,6 @@
 	gvp__Alternate_User_3__c char(18) null,
 	gvp__End_Date__c date null,
 	gvp__Start_Date__c date null,
-	gvp__Status__c nvarchar(100) null
+	gvp__Status__c nvarchar(255) null
     CONSTRAINT [PK_gvp__Account_Team__c] PRIMARY KEY ([Id]) 
 )
