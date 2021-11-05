@@ -42,8 +42,6 @@
 	gvp__Custom_Fact_2__c decimal(16,2) null,
 	gvp__External_Id__c varchar(70) null,
 	gvp__Account_Call_Send_Email_Date__c date null,
-	gvp__Account_Call_Send_Email__c varchar(10) null,
-	gvp__Account_Call_Status__c nvarchar(50) null, 
 	gvp__Account_Call_Send_Email__c nvarchar(255) null,
 	gvp__Account_Call_Status__c nvarchar(255) null, 
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',

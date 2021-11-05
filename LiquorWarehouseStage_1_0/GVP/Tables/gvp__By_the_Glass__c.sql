@@ -23,7 +23,6 @@
 	gvp__Item__c char(18) null,
 	gvp__Account_KPI__c char(18) null,
 	gvp__Compliance__c nvarchar(255) null,
-	gvp__Account_Call_Send_Email_Date__c date null,
 	gvp__Brand__c char(18) null,
 	gvp__Program__c char(18) null,
 	gvp__Custom_1__c nvarchar(255) null,

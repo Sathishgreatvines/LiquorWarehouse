@@ -43,7 +43,6 @@
 	gvp__Full_Product_Description__c nvarchar(200) null,
 	gvp__Product_Name__c nvarchar(255) null,
 	gvp__Product_Size__c nvarchar(255) null,
-	gvp__Questions_In_Set__c nvarchar(MAX) null,
 	gvp__Questions_In_Set__c nvarchar(500) null,
 	gvp__Required__c varchar(255) null,
 	gvp__Attachments__c decimal(4,1) null,
