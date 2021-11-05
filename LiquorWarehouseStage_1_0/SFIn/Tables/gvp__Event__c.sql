@@ -65,12 +65,12 @@
     gvp__Custom_8__c nvarchar(255) null,
     gvp__Custom_9__c nvarchar(255) null,
     gvp__Custom_10__c nvarchar(255) null,
-	[gvp__Custom_Fact_1__c] [varchar](40) NULL,
-	[gvp__Custom_Fact_2__c] [varchar](40) NULL,
-	[gvp__External_Id__c] [varchar](40) NULL,
-	[gvp__Account_Call_Send_Email_Date__c] [date] NULL,
-	[gvp__Account_Call_Send_Email__c] [varchar](40) NULL,
-	[gvp__Account_Call_Status__c] [varchar](40) NULL, 
+	gvp__Custom_Fact_1__c decimal(16,8) null,
+	gvp__Custom_Fact_2__c decimal(16,8) null,
+	gvp__External_Id__c varchar(70) null,
+	gvp__Account_Call_Send_Email_Date__c date null,
+	gvp__Account_Call_Send_Email__c varchar(10) null,
+	gvp__Account_Call_Status__c nvarchar(50) null, 
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Event__c] PRIMARY KEY ([Id])
 )
