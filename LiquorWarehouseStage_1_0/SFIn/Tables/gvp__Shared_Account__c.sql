@@ -13,7 +13,7 @@
 	[gvp__External_Id__c] [varchar](255) NULL,
 	[gvp__Account_Key__c] [varchar](255) NULL,
 	[gvp__Account_Key_List__c] [varchar](max) NULL,
-	[gvp__Account_Name__c] [varchar](255) NULL,
+	[gvp__Account_Name__c] NVARCHAR(255) NULL,
 	[gvp__Account_Segment__c] [varchar](255) NULL,
 	[gvp__Classification__c] [varchar](255) NULL,
 	[gvp__Attribute_1__c] [varchar](255) NULL,
