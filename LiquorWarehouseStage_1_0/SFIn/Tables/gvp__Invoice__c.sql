@@ -32,7 +32,7 @@
 	gvp__Program_Code__c varchar(255) null,
 	gvp__Program__c char(18) null,
 	gvp__Invoice_Owner__c char(18) null,
-	gvp__Status__c varchar(255) null,
+	gvp__Status__c nvarchar(255) null,
 	gvp__Attachments__c decimal(19,1) null,
 	gvp__Currency_Code__c nvarchar(100) null,
 	gvp__Custom_Currency_1__c decimal(14,4) null,

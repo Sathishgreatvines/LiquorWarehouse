@@ -40,7 +40,7 @@
 	gvp__Priority__c nvarchar(255) null,
 	gvp__Subject__c nvarchar(255) null,
 	gvp__Account_Team__c char(18) null,
-	gvp__Local_Date__c nvarchar(255) null,
+	gvp__Local_Date__c date null,
 	gvp__Event_Status__c nvarchar(255) null,
 	gvp__Sales_Team_Division__c char(18) null,
 	gvp__Date_Formula__c nvarchar(255) null,

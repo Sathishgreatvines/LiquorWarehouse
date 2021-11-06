@@ -58,7 +58,7 @@
 	Retailer_Ext_Key			VARCHAR(100) NOT NULL,
 	Retailer_Key				VARCHAR(255)  NOT NULL,
 	Retailer_Name				NVARCHAR(255) NOT NULL,
-	SourceFile					VARCHAR(100) NULL,
+	SourceFile					VARCHAR(255) NULL,
 	Shipping_City				NVARCHAR(100) NULL,
 	Shipping_Country			NVARCHAR(40)    NULL,
 	Shipping_State				NVARCHAR(80)    NULL,
