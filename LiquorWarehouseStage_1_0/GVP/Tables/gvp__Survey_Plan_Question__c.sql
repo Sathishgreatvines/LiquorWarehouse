@@ -45,7 +45,7 @@
 	gvp__Product_Size__c nvarchar(255) null,
 	gvp__Questions_In_Set__c nvarchar(500) null,
 	gvp__Required__c varchar(255) null,
-	gvp__Attachments__c decimal(4,1) null,
+	gvp__Attachments__c decimal(6,1) null,
 	gvp__Sales_Driver__c nvarchar(255) null,
 	gvp__Set_Sales_Driver__c nvarchar(255) null,
 	gvp__Question_Set_Minimum_Target__c decimal(19,1) null,
