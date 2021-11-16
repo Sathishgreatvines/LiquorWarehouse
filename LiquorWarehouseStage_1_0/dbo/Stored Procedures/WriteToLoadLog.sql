@@ -19,7 +19,7 @@ begin
   declare @ConsolidatedExecutionStatus varchar(25)
   set @ConsolidatedExecutionStatus = 
     case 
-      when isnull(@error, '') = '' then 'Completed'
+      when isnull(@error, '') = '' then @executionstatus
       when isnull(@error, '') <> '' then 'Error'
       else 'Other'
     end

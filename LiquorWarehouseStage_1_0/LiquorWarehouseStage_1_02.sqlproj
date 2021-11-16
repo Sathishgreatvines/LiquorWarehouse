@@ -767,5 +767,6 @@
     <None Include="SlocumLiquorWarehouseStage_1_02.publish.publish.publish.xml" />
     <None Include="AlbertBichotLiquorWarehouseStage_1_03_04.publish.xml" />
     <None Include="SerrallesLiquorWarehouseStage_1_03_04.publish.xml" />
+    <None Include="KelvinSlushLiquorWarehouseStage_PROD.publish.xml" />
   </ItemGroup>
 </Project>
