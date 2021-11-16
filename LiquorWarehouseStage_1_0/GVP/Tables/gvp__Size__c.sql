@@ -11,7 +11,7 @@
     [LastReferencedDate]                DATETIME         NULL,
     [gvp__Liter_Volume__c]              DECIMAL (21, 12)   NULL,
     [gvp__Size_Key__c]                  NVARCHAR(255)     NULL,
-    [gvp__X9_Liter_Eqv__c]              DECIMAL (21, 12) NULL,
+    [gvp__X9_Liter_Eqv__c]              DECIMAL (19, 12) NULL,
     [gvp__Primary_Conversion__c]        DECIMAL (19, 12) NULL,
     [gvp__Secondary_Conversion__c]      DECIMAL (19, 12) NULL,
     [gvp__Standard_Bottles_Per_Case__c] DECIMAL (18, 0) NULL,
