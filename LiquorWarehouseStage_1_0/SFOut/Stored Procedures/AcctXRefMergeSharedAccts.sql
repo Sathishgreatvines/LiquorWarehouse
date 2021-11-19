@@ -17,13 +17,13 @@ where ax.RawState in (select distinct gvp__Account_Address_State__c from BevPath
 
 WITH groups AS (
  SELECT distinct
-       coalesce(an.SFID, ax.SFID, ak.SFID, ay.SFID) as gvp__Account__c
+       coalesce(an.SFID, ax.SFID, ad.SFID, ay.SFID) as gvp__Account__c
 	  ,bp.id as [gvp__BevPath_Connection__c]
       ,gsa.gvp__Received_Account_Identifier__c
       ,gsa.[gvp__External_Id__c]
       ,[gvp__Account_Key__c]
       ,[gvp__Account_Key_List__c]
-      ,coalesce([gvp__Account_Name__c],an.AccountName,ax.AccountName,ak.AccountName,ay.AccountName) as gvp__Account_Name__c
+      ,coalesce([gvp__Account_Name__c],an.AccountName,ax.AccountName,ad.AccountName,ay.AccountName) as gvp__Account_Name__c
       ,[gvp__Account_Segment__c]
       ,[gvp__Classification__c]
       ,[gvp__Attribute_1__c]
@@ -55,8 +55,12 @@ WITH groups AS (
   FROM ' +  @SrsSchema + '.[gvp__Shared_Account__c] gsa
   left join #TempXREF an on (an.RSCUST = gsa.gvp__Received_Account_Identifier__c and an.RawState = gsa.gvp__Account_Address_State__c and an.AccountName = gsa.gvp__Account_Name__c)
   left join #TempXREF ax on (ax.RSCUST = gsa.gvp__Received_Account_Identifier__c and ax.RawState = gsa.gvp__Account_Address_State__c)
+ -- Added DBA logic for RNDC Youngs accounts in CA and OR and WA
+  left join  #TempXREF ad on (gsa.gvp__Account_Address_State__c in (''CA'',''WA'') and ad.RSCUST = right(gsa.gvp__DBA__c,7) 
+         and ad.RawState = gsa.gvp__Account_Address_State__c)
+
   left join #TempXREF ay on (ay.AccountKey = gsa.gvp__Received_Account_Identifier__c and ay.RawState = gsa.gvp__Account_Address_State__c)
-  left join #TempXREF ak on (ak.RSCUST = gsa.gvp__Received_Account_Identifier__c)
+--  left join #TempXREF ak on (ak.RSCUST = gsa.gvp__Received_Account_Identifier__c)
   left join gvp.gvp__BevPath_Connection__c bp on bp.' + @ConnectionId + ' = gsa.gvp__BevPath_Connection__c '
   + @WhereClause + '
 )
